@@ -11,8 +11,10 @@
   padding-bottom: 1%;
 }
 
+
 #jumbo_image_1{
   background-image: url("http://essaysanddissertations.com/wp-content/uploads/2015/09/college.jpg");
+  /*background-image: url('../img/Pavilion-Meeting.jpg');*/
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -65,7 +67,8 @@
   text-align: center;
 /*  margin-top: 10%;*/
   padding: 3%;
-  background-color: #484848;
+  /*background-color: #484848;*/
+  background-color: #5b9bd5;
   opacity: .95;
   border-radius: 5px;
   color: #1585ac;
@@ -76,7 +79,8 @@
   text-align: center;
 /*  margin-top: 10%;*/
   padding: 3%;
-  background-color: #484848;
+  /*background-color: #484848;*/
+  background-color: #5b9bd5;
   opacity: .95;
   border-radius: 5px;
   color: #1585ac;
@@ -88,7 +92,8 @@
   text-align: center;
 /*  margin-top: 10%;*/
   padding: 3%;
-  background-color: #484848;
+  /*background-color: #484848;*/
+  background-color: #5b9bd5;
   opacity: .95;
   border-radius: 5px;
   color: #1585ac;
