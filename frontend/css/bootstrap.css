@@ -11,6 +11,13 @@
   padding-bottom: 1%;
 }
 
+#headline{
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  padding-bottom: 4%;
+
+}
 
 #jumbo_image_1{
   background-image: url("http://essaysanddissertations.com/wp-content/uploads/2015/09/college.jpg");
@@ -23,11 +30,12 @@
 }
 #jumbo_image_2{
 
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
+/*  background-size: cover;
+  background-repeat: no-repeat;*/
+/*  height: 2%;*/
   text-align: center;
-  margin-top: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   /*background-color: #8c8c8c;*/
   color: black;
   /*border: 2px solid red;*/
@@ -73,6 +81,7 @@
   border-radius: 5px;
   color: #1585ac;
   height: 250px;
+  font-size: 1.2em;
 }
 
 #center_box_2{
@@ -85,6 +94,7 @@
   border-radius: 5px;
   color: #1585ac;
   height: 250px;
+  font-size: 1.2em;
 
 }
 
@@ -98,6 +108,7 @@
   border-radius: 5px;
   color: #1585ac;
   height: 250px;
+  font-size: 1.2em;
 
 }
 .box_image{
@@ -126,9 +137,9 @@
   margin-top: 10%;
 }
 
-.jumbo_2_content{
+/*.jumbo_2_content{
   padding-top: 2%;
-}
+}*/
 
 #test-box{
   background-color: red;
