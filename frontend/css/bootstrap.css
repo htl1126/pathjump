@@ -43,9 +43,12 @@
 }
 
 #jumbo_image_3{
-  background-image: url('http://www.blogcdn.com/slideshows/images/slides/374/394/8/S3743948/slug/l/young-woman-sitting-by-table-and-using-a-laptop-1.jpg');
+  /*background-image: url('http://www.blogcdn.com/slideshows/images/slides/374/394/8/S3743948/slug/l/young-woman-sitting-by-table-and-using-a-laptop-1.jpg');*/
+  background-image: url(../img/face_group.jpg);
 /*  background-image: url('https://drive.google.com/file/d/0B8x9LpPx-WQ-REFkbmZhZ3JLZzg/view?usp=sharing');*/
-  background-size: cover;
+/*  background-size: cover;*/
+  background-color: #5b9bd5;
+  background-position: center;
   background-repeat: no-repeat;
   height: 600px;
   /*color: white;*/
