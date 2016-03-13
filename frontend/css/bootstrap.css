@@ -187,23 +187,95 @@
   height: 300px;
   border-radius: 150px;
   background: url(http://zblogged.com/wp-content/uploads/2015/11/17.jpg) no-repeat;
+  border: 6px solid #5b9bd5;
 }
 
 #profile_text_1{
   height: 300px;
-  background-color: gray;
+  /*background-color: gray;*/
 
 }
 
-#profile_info{
+
+#profile_info_1{
+  font-size: 1.4em;
+  margin-left: .3%;
+  margin-top: 15px;
+}
+
+#profile_info_2{
+  font-size: 1em;
+  margin-left: .3%;
+  margin-top: 15px;
+}
+
+#profile_info_3{
+  font-size: 1em;
+  margin-left: .3%;
+  margin-top: 15px;
+}
+#profile_info_4{
+  font-size: 1em;
+  margin-left: .3%;
+  margin-top: 15px;
+}
+
+.bold_me{
+  font-weight: bold;
+}
+
+#user_info{
   height: 300px;
   background-color: blue;
 }
 
-#profile_text_2{
+#education_text{
   height: 300px;
-  background-color: gray;
+/*  background-color: gray;*/
   margin-left: -53px;
+
+}
+
+#degree_info{
+
+}
+
+#enrolled_input{
+
+}
+
+#majors_input{
+
+}
+
+#gpa_input{
+
+}
+
+#work_ex{
+  margin-top:2%;
+  height:300px;
+/*  background-color: gray;*/
+  margin-left: -53px
+}
+
+#years_worked{
+
+}
+
+#years_input{
+
+}
+
+#company_input{
+
+}
+
+#job_title_input{
+
+}
+
+#job_description_input{
 
 }
 
