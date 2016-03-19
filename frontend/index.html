@@ -26,7 +26,7 @@
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
           <li class="divider-vertical"></li>
-            <li><a href="file:///Users/johnwilliams/Desktop/pathjump/frontend/profile.html">Profile</a></li>
+            <li><a href='profile.html'>Profile</a></li>
             <li><a href="#">Something Else</a></li>
             <li class="divider-vertical"></li>
           <li class="dropdown">
@@ -46,7 +46,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Link</a></li>
         </ul>
-      </div><!-- /.navbar-collapse -->
+      </div><!-- /.navbar-collapse
     </div><!-- /.container-fluid -->
   </nav>
 
@@ -55,13 +55,33 @@
 
   <div class="jumbotron" id="jumbo_image_1">
     <div class="row">
-      <div class="col-sm-12" id="headline">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6" id="headline">
         Find Your Dream Career Path
       </div>
-    </div>
-      <div class="row" id="my_row">
 
-        <div class="col-sm-2" id="test-span">
+      <div class="row" id="primary_button_div">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+            Log In!
+        </button>
+        Or
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+            Create an Account
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="jumbotron" id="jumbo_image_2">
+    <div class="row">
+      <div class="col-lg-3">
+        <h1>What is Pathjump?</h1>
+      </div>
+   <!--      <p id="what_is_pj">
+        </p> -->
+        <div class="col-sm-1" id="test-span">
         </div>
 
         <div class="col-sm-2" id="jumbo_1_center_box">
@@ -91,20 +111,6 @@
             Search And Apply To Top Companies And Innovative Start-ups while professionally networking with your peers
          </div>
         </div>
-
-      </div>
-  </div>
-
-  <div class="jumbotron" id="jumbo_image_2">
-    <div class="row">
-      <div class="col-lg-4">
-        <h1>What is PathJump?</h1>
-      </div>
-      <div class="col-lg-8">
-        <p id="what_is_pj">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        </p>
-      </div>
     </div>
   </div>
 
@@ -117,9 +123,9 @@
 
     <div class="row newRow" id="test-2">
       <div>
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+<!--         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
           Get Started!
-        </button>
+        </button> -->
 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
@@ -129,7 +135,7 @@
                 <h4 class="modal-title" id="myModalLabel">Make an Account</h4>
               </div>
               <div class="modal-body">
-                <h1>Make an Account!</h1>
+<!--                 <h1>Make an Account!</h1> -->
 
 
                 <form method="post" action="demoform.asp">
