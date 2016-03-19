@@ -6,6 +6,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 
+
 #header {
   padding-top: 1%;
   padding-bottom: 1%;
@@ -15,18 +16,22 @@
   text-align: center;
   color: white;
   font-size: 3em;
-  padding-bottom: 4%;
+  /*padding-bottom: 4%;*/
+  /*background-color: #5b9bd5;*/
+/*  opacity: .8;*/
+
 
 }
 
 #jumbo_image_1{
-  background-image: url("http://essaysanddissertations.com/wp-content/uploads/2015/09/college.jpg");
-  /*background-image: url('../img/Pavilion-Meeting.jpg');*/
+/*  background-image: url("http://essaysanddissertations.com/wp-content/uploads/2015/09/college.jpg");*/
+  background-image: url('../img/library.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
 /* color: white;*/
  width: 100%;
+ text-align: center;
 }
 #jumbo_image_2{
 
@@ -34,24 +39,29 @@
   background-repeat: no-repeat;*/
 /*  height: 2%;*/
   text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  /*background-color: #8c8c8c;*/
-  color: black;
-  /*border: 2px solid red;*/
-  margin-top: 0;
+/*  padding-top: 5%;
+  padding-bottom: 5%;*/
+  background-color: #002776;
+  color: white;
+  margin-top: -40px;
+}
+
+#primary_button_div{
+  color: white;
+  margin-top: 275px;
 }
 
 #jumbo_image_3{
   /*background-image: url('http://www.blogcdn.com/slideshows/images/slides/374/394/8/S3743948/slug/l/young-woman-sitting-by-table-and-using-a-laptop-1.jpg');*/
-  background-image: url(../img/face_group.jpg);
+  background-image: url(../img/user_profiles.jpg);
 /*  background-image: url('https://drive.google.com/file/d/0B8x9LpPx-WQ-REFkbmZhZ3JLZzg/view?usp=sharing');*/
 /*  background-size: cover;*/
   background-color: #5b9bd5;
   background-position: center;
   background-repeat: no-repeat;
   height: 600px;
-  /*color: white;*/
+  margin-top: -40px;
+
 }
 
 #jumbo_image_4{
@@ -70,9 +80,9 @@
   padding-top: 10%;
 }
 
-/*#test-span{
-  border: 5px solid blue;
-}*/
+#test-span{
+  margin-left: -4%;
+}
 
 #jumbo_1_center_box{
   text-align: center;
@@ -83,7 +93,7 @@
   opacity: .95;
   border-radius: 5px;
   color: #1585ac;
-  height: 250px;
+  height: 200px;
   font-size: 1.2em;
 }
 
@@ -96,7 +106,7 @@
   opacity: .95;
   border-radius: 5px;
   color: #1585ac;
-  height: 250px;
+  height: 200px;
   font-size: 1.2em;
 
 }
@@ -110,7 +120,7 @@
   opacity: .95;
   border-radius: 5px;
   color: #1585ac;
-  height: 250px;
+  height: 200px;
   font-size: 1.2em;
 
 }
@@ -134,10 +144,11 @@
 
 #get_started_btn{
   width: 20%;
-  height: 50px;
+  /*height: 50px;*/
   font-size: 2em;
-  margin-left: 40%;
-  margin-top: 10%;
+/*  text-align: center;*/
+/*  margin-left: 40%;
+  margin-top: 10%;*/
 }
 
 /*.jumbo_2_content{
