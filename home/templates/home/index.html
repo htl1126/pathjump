@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PathJump</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- <input type="button" class="btn btn-success" value="My Button"/> -->
+
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Pathjump</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+          <li class="divider-vertical"></li>
+            <li><a href='profile.html'>Profile</a></li>
+            <li><a href="#">Something Else</a></li>
+            <li class="divider-vertical"></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <!--This is the end of the nav bar -->
+  <!--This is where the images begin -->
+
+  <div class="jumbotron" id="jumbo_image_1">
+    <div class="row">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6" id="headline">
+        Find Your Dream Career Path
+      </div>
+
+      <div class="row" id="primary_button_div">
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+            Log In!
+        </button>
+        Or
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+            Create an Account
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="jumbotron" id="jumbo_image_2">
+    <div class="row">
+      <div class="col-lg-3">
+        <h1>What is Pathjump?</h1>
+      </div>
+   <!--      <p id="what_is_pj">
+        </p> -->
+        <div class="col-sm-1" id="test-span">
+        </div>
+
+        <div class="col-sm-2" id="jumbo_1_center_box">
+
+          <!-- <div class="row" id="my_box"> -->
+            <!-- <img src="https://cdn2.iconfinder.com/data/icons/blue-rounded-set/154/database-data-info-hardware-128.png" class="box_image"> -->
+            <div class="row" id="box_text">
+              Showcase Your Unique Skills To Employers Through The Young Professional Profile
+            </div>
+        </div>
+         <div class="col-sm-1">
+         </div>
+
+        <div class="col-sm-2" id="center_box_2">
+          <!-- <img src="https://cdn0.iconfinder.com/data/icons/web-service-and-development/512/eye_vision_watch_looking_surveillance_privacy_eyesight_open_control_secure_big_brother_data_search_review_public_protection_spy_web_flat_design_icon-512.png" class="box_image"> -->
+          <div class="row" id="box_text_2">
+            Discover Your Career Path And How You Can Improve Your Lifetime Earnings Substantially
+          </div>
+
+        </div>
+        <div class="col-sm-1">
+         </div>
+
+        <div class="col-sm-2" id="center_box_3">
+          <!-- <img src="http://www.ryowibowo.com/wp-content/uploads/2015/06/Closed-loop-marketing-blog.png" class="box_image"> -->
+          <div class="row" id="box_text_3">
+            Search And Apply To Top Companies And Innovative Start-ups while professionally networking with your peers
+         </div>
+        </div>
+    </div>
+  </div>
+
+  <a name="profile_location"></a>
+  <div class="jumbotron" id="jumbo_image_3">
+
+<!--     <div =class"row newRow" id="make_profile">
+      Make a profile
+    </div> -->
+
+    <div class="row newRow" id="test-2">
+      <div>
+<!--         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+          Get Started!
+        </button> -->
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Make an Account</h4>
+              </div>
+              <div class="modal-body">
+<!--                 <h1>Make an Account!</h1> -->
+
+
+                <form method="post" action="demoform.asp">
+
+                  <div>
+                    <h3>Make an Account</h3>
+
+                    <label for="usrnm" class="ui-hidden-accessible">
+                      Username:
+                    </label>
+                    <input type="text" name="user" id="usrnm" placeholder="Username">
+
+                    <label for="pswd" class="ui-hidden-accessible">
+                      Password:
+                    </label>
+
+                    <input type="password" name="passw" id="pswd" placeholder="Password">
+                    <!-- <input type="submit" data-inline="true" value="Create!"> -->
+
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+    <!--     <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
+          <form method="post" action="demoform.asp">
+
+            <div>
+              <h3>Make an Account</h3>
+
+              <label for="usrnm" class="ui-hidden-accessible">
+                Username:
+              </label>
+              <input type="text" name="user" id="usrnm" placeholder="Username">
+
+              <label for="pswd" class="ui-hidden-accessible">
+                Password:
+              </label>
+
+              <input type="password" name="passw" id="pswd" placeholder="Password">
+              <input type="submit" data-inline="true" value="Create!">
+
+            </div>
+          </form>
+        </div> -->
+      </div>
+
+
+    </div>
+    </div>
+  </div>
+
+
+<!--   <div class="jumbotron" id="jumbo_image_4">
+  </div>
+  <div class="row" id="test-box">
+    <div class="span4" id="test-1">
+    </div>
+
+    <div class="span5" id="test-2">
+    </div>
+  </div> -->
+
+
+
+
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="{% static "js/bootstrap.js" %}"></script>
+
+
+
+</body>
+
+
+</html>
