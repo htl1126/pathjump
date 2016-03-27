@@ -25,19 +25,18 @@
 }
 
 #jumbo_image_1{
-/*  background-image: url("http://essaysanddissertations.com/wp-content/uploads/2015/09/college.jpg");*/
+  /*background-image: url("http://essaysanddissertations.com/wp-content/uploads/2015/09/college.jpg");*/
   background-image: url('../img/library.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
-/* color: white;*/
- width: 100%;
- text-align: center;
+  text-align: center;
 }
 
 #three_boxes{
-  margin-top: 5%;
+  margin-top: 8%;
 }
+
 #jumbo_image_2{
 
 /*  background-size: cover;
@@ -66,7 +65,8 @@
   background-repeat: no-repeat;
   height: 600px;
   margin-top: -40px;
-  -webkit-filter: grayscale(1px);
+  -webkit-filter: grayscale(60%);
+  -webkit-filter: blur(2px);
 
 }
 
@@ -92,12 +92,9 @@
 
 #jumbo_1_center_box{
   text-align: center;
-/*  margin-top: 10%;*/
   padding: 3%;
-  /*background-color: #484848;*/
   background-color: #5b9bd5;
   opacity: .95;
-  border-radius: 5px;
   color: #1585ac;
   height: 200px;
   font-size: 1.2em;
@@ -105,12 +102,9 @@
 
 #center_box_2{
   text-align: center;
-/*  margin-top: 10%;*/
   padding: 3%;
-  /*background-color: #484848;*/
   background-color: #5b9bd5;
   opacity: .95;
-  border-radius: 5px;
   color: #1585ac;
   height: 200px;
   font-size: 1.2em;
@@ -119,12 +113,9 @@
 
 #center_box_3{
   text-align: center;
-/*  margin-top: 10%;*/
   padding: 3%;
-  /*background-color: #484848;*/
   background-color: #5b9bd5;
   opacity: .95;
-  border-radius: 5px;
   color: #1585ac;
   height: 200px;
   font-size: 1.2em;
@@ -152,7 +143,8 @@
   width: 15%;
   font-size: 1.4em;
   border: 3px solid white;
-  background-color: transparent;
+  background-color: gray;
+  opacity: .98;
 
 }
 
@@ -176,6 +168,11 @@
 }*/
 
 
+#what_is_text{
+  font-size: 2em;
+  text-align: left;
+}
+
 #make_profile{
   text-align: center;
   padding: 2%;
@@ -198,6 +195,8 @@
   border: 2px solid blue;
   display: none;
 }
+
+
 
 /*Below is CSS for Profile Page*/
 
