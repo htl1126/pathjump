@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 {% load staticfiles %}
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -56,23 +56,65 @@
 
   <div class="jumbotron" id="jumbo_image_1">
     <div class="row">
+
       <div class="col-sm-3">
       </div>
       <div class="col-sm-6" id="headline">
         Find Your Dream Career Path
       </div>
 
-      <div class="row" id="primary_button_div">
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
-            Log In!
-        </button>
-        Or
-        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
-            Create an Account
-        </button>
-      </div>
     </div>
 
+    <div class ='row' id="three_boxes">
+
+      <div class="col-sm-2" id="test-span">
+      </div>
+
+      <div class="col-sm-2" id="jumbo_1_center_box">
+        <div class="row" id="box_text">
+          Discover Your Path
+        </div>
+      </div>
+
+      <div class="col-sm-1">
+      </div>
+
+      <div class="col-sm-2" id="center_box_2">
+        <div class="row" id="box_text_2">
+          Find Internships & Jobs
+        </div>
+      </div>
+
+      <div class="col-sm-1">
+      </div>
+
+      <div class="col-sm-2" id="center_box_3">
+        <div class="row" id="box_text_3">
+          Showcase Your Unique Skills To Employers
+        </div>
+      </div>
+
+      <div class="col-sm-2" id="test-span">
+      </div>
+
+    </div>
+
+    <div class="row" id="primary_button_div">
+     <!--  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+          Log In!
+      </button>
+      Or
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+          Create an Account
+      </button> -->
+      <button type="button" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+        Log In!
+      </button>
+        or
+      <button type="button" data-toggle="modal" data-target="#myModal" id="get_started_btn">
+        Create an Account
+      </button>
+    </div>
   </div>
 
   <div class="jumbotron" id="jumbo_image_2">
@@ -80,53 +122,18 @@
       <div class="col-lg-3">
         <h1>What is Pathjump?</h1>
       </div>
-   <!--      <p id="what_is_pj">
-        </p> -->
-        <div class="col-sm-1" id="test-span">
-        </div>
-
-        <div class="col-sm-2" id="jumbo_1_center_box">
-
-          <!-- <div class="row" id="my_box"> -->
-            <!-- <img src="https://cdn2.iconfinder.com/data/icons/blue-rounded-set/154/database-data-info-hardware-128.png" class="box_image"> -->
-            <div class="row" id="box_text">
-              Showcase Your Unique Skills To Employers Through The Young Professional Profile
-            </div>
-        </div>
-         <div class="col-sm-1">
-         </div>
-
-        <div class="col-sm-2" id="center_box_2">
-          <!-- <img src="https://cdn0.iconfinder.com/data/icons/web-service-and-development/512/eye_vision_watch_looking_surveillance_privacy_eyesight_open_control_secure_big_brother_data_search_review_public_protection_spy_web_flat_design_icon-512.png" class="box_image"> -->
-          <div class="row" id="box_text_2">
-            Discover Your Career Path And How You Can Improve Your Lifetime Earnings Substantially
-          </div>
-
-        </div>
-        <div class="col-sm-1">
-         </div>
-
-        <div class="col-sm-2" id="center_box_3">
-          <!-- <img src="http://www.ryowibowo.com/wp-content/uploads/2015/06/Closed-loop-marketing-blog.png" class="box_image"> -->
-          <div class="row" id="box_text_3">
-            Search And Apply To Top Companies And Innovative Start-ups while professionally networking with your peers
-         </div>
-        </div>
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-6" id='what_is_text'>
+        Pathjump is the young professional network. Pathjump lets you explore careers, discover what jobs you are best suited for based on your profile, apply to amazing internships and jobs, and provides guidance to improve your chances of getting those jobs. Pathjump helps you find your dream path!
+      </div>
     </div>
   </div>
 
   <a name="profile_location"></a>
   <div class="jumbotron" id="jumbo_image_3">
-
-<!--     <div =class"row newRow" id="make_profile">
-      Make a profile
-    </div> -->
-
     <div class="row newRow" id="test-2">
       <div>
-<!--         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" id="get_started_btn">
-          Get Started!
-        </button> -->
 
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" role="document">
@@ -136,24 +143,27 @@
                 <h4 class="modal-title" id="myModalLabel">Make an Account</h4>
               </div>
               <div class="modal-body">
-<!--                 <h1>Make an Account!</h1> -->
-
-
                 <form method="post" action="demoform.asp">
-
                   <div>
-                    <h3>Make an Account</h3>
-
                     <label for="usrnm" class="ui-hidden-accessible">
                       Username:
                     </label>
                     <input type="text" name="user" id="usrnm" placeholder="Username">
-
+                    <br>
+                    <br>
                     <label for="pswd" class="ui-hidden-accessible">
                       Password:
                     </label>
-
                     <input type="password" name="passw" id="pswd" placeholder="Password">
+                    <br>
+                    <br>
+                    <label class="ui-hidden-accessible">
+                      University:
+                    </label>
+                    <input type="text" name="university_name" id="university_input" placeholder="University Name">
+
+
+
                     <!-- <input type="submit" data-inline="true" value="Create!"> -->
 
                   </div>
@@ -161,40 +171,12 @@
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-primary">Submit</button>
               </div>
             </div>
           </div>
         </div>
 
-
-
-
-
-
-
-
-    <!--     <div data-role="popup" id="myPopup" class="ui-content" style="min-width:250px;">
-          <form method="post" action="demoform.asp">
-
-            <div>
-              <h3>Make an Account</h3>
-
-              <label for="usrnm" class="ui-hidden-accessible">
-                Username:
-              </label>
-              <input type="text" name="user" id="usrnm" placeholder="Username">
-
-              <label for="pswd" class="ui-hidden-accessible">
-                Password:
-              </label>
-
-              <input type="password" name="passw" id="pswd" placeholder="Password">
-              <input type="submit" data-inline="true" value="Create!">
-
-            </div>
-          </form>
-        </div> -->
       </div>
 
 
