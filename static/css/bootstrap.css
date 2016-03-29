@@ -93,36 +93,56 @@
 #jumbo_1_center_box{
   text-align: center;
   padding: 3%;
-  background-color: #5b9bd5;
+ /* background-color: #5b9bd5;*/
+  background-color: #3f4142;
   opacity: .95;
   color: #1585ac;
   height: 200px;
   font-size: 1.2em;
+  margin-left: -3%;
 }
 
 #center_box_2{
   text-align: center;
   padding: 3%;
-  background-color: #5b9bd5;
+  /*background-color: #5b9bd5;*/
+  background-color: #3f4142;
   opacity: .95;
   color: #1585ac;
   height: 200px;
   font-size: 1.2em;
+  margin-left: 1%;
 
 }
 
 #center_box_3{
   text-align: center;
   padding: 3%;
-  background-color: #5b9bd5;
+  background-color: #3f4142;
   opacity: .95;
   color: #1585ac;
   height: 200px;
   font-size: 1.2em;
+  margin-left: 1%;
 
 }
+
+#center_box_4{
+  text-align: center;
+  padding: 3%;
+  background-color: #3f4142;
+  opacity: .95;
+  color: #1585ac;
+  height: 200px;
+  font-size: 1.2em;
+  margin-left: 1%;
+
+}
+
+
+
 .box_image{
-  height: 75px;
+  margin-bottom: 15%;
 }
 
 /*#my_box{
