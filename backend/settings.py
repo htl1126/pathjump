@@ -122,6 +122,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    '/home/htl/Desktop/cornell_tech/startup_studio/pathjump/static',
-    # '/home/ubuntu/pathjump/static', for running on AWS
+    os.path.join(BASE_DIR, 'static')
 ]
