@@ -1,4 +1,16 @@
 {% load staticfiles %}
+
+{% if user.is_authenticated%}
+<h2>
+{{ user_form.first_name }}
+{{ user_form.last_name }}<br>
+{{ profile_form.university }}<br>
+</h2>
+{% else %}
+   <h1>You should log in first to see you profile</h1>
+{% endif %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

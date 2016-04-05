@@ -3,7 +3,9 @@ from .forms import UserForm, UserProfileForm
 
 
 def profile(request):
-    return render(request, 'account/profile.html', {})
+    return render(request, 'account/profile.html',
+                  {'user_form': request.user,
+                   'profile_form': request.user.profile})
 
 
 def register(request):
