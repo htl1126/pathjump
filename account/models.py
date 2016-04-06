@@ -4,6 +4,9 @@ from django.db import models
 from django.contrib.auth.models import User
 
 
+# ref: http://stackoverflow.com/questions/20613315/
+#      get-rid-of-get-profile-in-a-migration-to-django-1-6
+# ref: http://www.tangowithdjango.com/book17/chapters/login.html
 class UserProfile(models.Model):
     # This line is required. Links UserProfile to a User model instance.
     user = models.OneToOneField(User, related_name='profile')
