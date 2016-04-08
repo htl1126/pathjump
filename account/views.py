@@ -2,6 +2,10 @@ from django.shortcuts import render
 from .forms import UserForm, UserProfileForm
 
 
+def onboard(request):
+    return render(request, 'account/onboard.html', {})
+
+
 def profile(request):
     return render(request, 'account/profile.html',
                   {'user_form': request.user,

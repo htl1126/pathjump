@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+{% if user.is_authenticated%}
+<h2>
+{{ user_form.first_name }}
+{{ user_form.last_name }}<br>
+{{ profile_form.university }}<br>
+</h2>
+{% else %}
+   <h1>You should log in first to see you profile</h1>
+{% endif %}
+
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+</head>
+<body>
+</body>
+</html>
