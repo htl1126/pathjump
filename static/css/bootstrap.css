@@ -337,6 +337,29 @@
   margin-top: 5%;
 }
 
+
+
+/*This is the CSS for the Login Page*/
+
+#form_text{
+  text-align: center;
+  margin-top: 20%;
+}
+
+#login_container{
+  height: 500px;
+  background-color:#65b4ce;
+}
+
+
+/*This is the CSS for the Resister Page*/
+
+#register_container{
+  height: 500px;
+  background-color:#65b4ce;
+  text-align: left;
+}
+
 /*
 This is the end of my code and the start of bootstrap*/
 
