@@ -1,15 +1,76 @@
-{% block content %}
+ {% load staticfiles %}
 
-{% if form.errors %}
-    <p>Your username and password didn't match. Please try again.</p>
-{% endif %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-<form method="post" action="{% url 'account:login' %}">{% csrf_token %}
-    <table>
-        {{ form }}
-    </table>
-    <input type="submit" value="login" />
-    <input type="hidden" name="next" value="/" />
-</form>
+  <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
+</head>
 
-{% endblock %}
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Pathjump</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+          <li class="divider-vertical"></li>
+          {% if user.is_authenticated %}
+              <li><a href='/account/profile'>Profile</a></li>
+          {% endif %}
+            <li class="divider-vertical"></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          {% if user.is_authenticated %}
+              <li><a href="/account/logout">Logout</a></li>
+          {% else %}
+              <li><a href="/account/login">Login</a></li>
+              <li><a href="/account/register">Register</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  </body>
+  <div class="row" id="login_container">
+    <div class="row">
+      <div class="col-lg-4">
+      </div>
+      <div class='col-lg-4'>
+        {% block content %}
+
+        {% if form.errors %}
+            <p>Your username and password didn't match. Please try again.</p>
+        {% endif %}
+        <form method="post" action="{% url 'account:login' %}" id="form_text">
+          {% csrf_token %}
+            <table>
+                {{ form }}
+            </table>
+            <input type="submit" value="login" />
+            <input type="hidden" name="next" value="/" />
+        </form>
+
+        {% endblock %}
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="{% static "js/bootstrap.js" %}"></script>
+
+  </body>
+</html>

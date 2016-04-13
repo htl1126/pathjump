@@ -1,39 +1,80 @@
+ {% load staticfiles %}
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Create an account</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
     </head>
 
     <body>
-        <h1>Create an account</h1>
 
-        {% if registered %}
-        <strong>Your account was created successfully.</strong>
-        <a href="/">Return to the homepage to log in.</a><br />
-        {% else %}
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Pathjump</a>
+              </div>
 
-        <form id="user_form" method="post" action="/account/register/"
-                enctype="multipart/form-data">{% csrf_token %}
-            {% if user_exist %}
-            <strong>The username already exists. Please create another account.</strong><br>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+                  <li class="divider-vertical"></li>
+                  {% if user.is_authenticated %}
+                      <li><a href='/account/profile'>Profile</a></li>
+                  {% endif %}
+                    <li class="divider-vertical"></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  {% if user.is_authenticated %}
+                      <li><a href="/account/logout">Logout</a></li>
+                  {% else %}
+                      <li><a href="/account/login">Login</a></li>
+                      <li><a href="/account/register">Register</a></li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+
+        <div class='row' id="register_container">
+            <h1>Create an account</h1>
+
+            {% if registered %}
+            <strong>Your account was created successfully.</strong>
+            <a href="/">Return to the homepage to log in.</a><br />
+            {% else %}
+
+            <form id="user_form" method="post" action="/account/register/"
+                    enctype="multipart/form-data">{% csrf_token %}
+                {% if user_exist %}
+                <strong>The username already exists. Please create another account.</strong><br>
+                {% endif %}
+
+                <!-- Display each form. The as_p method wraps each element in a paragraph
+                     (<p>) element. This ensures each element appears on a new line,
+                     making everything look neater. -->
+                Username: {{ user_form.username }} <br>
+                Password: {{ user_form.password }} <br>
+                Email : {{ user_form.email }} <br>
+                First name : {{ user_form.first_name }} <br>
+                Last name : {{ user_form.last_name }} <br>
+                Website: {{ profile_form.website }} <br>
+                Picture: {{ profile_form.picture }} <br>
+                University: {{ profile_form.university }} <br>
+
+                <!-- Provide a button to click to submit the form. -->
+                <input type="submit" name="submit" value="Register" />{% csrf_token %}
+            </form>
+
             {% endif %}
-
-            <!-- Display each form. The as_p method wraps each element in a paragraph
-                 (<p>) element. This ensures each element appears on a new line,
-                 making everything look neater. -->
-            Username: {{ user_form.username }} <br>
-            Password: {{ user_form.password }} <br>
-            Email : {{ user_form.email }} <br>
-            First name : {{ user_form.first_name }} <br>
-            Last name : {{ user_form.last_name }} <br>
-            Website: {{ profile_form.website }} <br>
-            Picture: {{ profile_form.picture }} <br>
-            University: {{ profile_form.university }} <br>
-
-            <!-- Provide a button to click to submit the form. -->
-            <input type="submit" name="submit" value="Register" />{% csrf_token %}
-        </form>
-
-        {% endif %}
+        </div>
     </body>
 </html>
