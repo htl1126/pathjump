@@ -355,8 +355,26 @@
 /*This is the CSS for the Resister Page*/
 
 #register_container{
-  height: 500px;
+  height: 600px;
+  text-align: center;
+  background-color: #3b3d3e;
+}
+
+#register_center{
   background-color:#65b4ce;
+  height: 500px;
+}
+
+.register_input_title{
+  text-align: left;
+  margin-left: 10%;
+}
+
+.register_input{
+  margin-top: -3%;
+}
+
+.register_title_left{
   text-align: left;
 }
 
