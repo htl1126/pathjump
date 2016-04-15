@@ -45,36 +45,40 @@
 
 
         <div class='row' id="register_container">
-            <h1>Create an account</h1>
+            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4" id="register_center">
+                <h1>Create an account</h1>
 
-            {% if registered %}
-            <strong>Your account was created successfully.</strong>
-            <a href="/">Return to the homepage to log in.</a><br />
-            {% else %}
+                {% if registered %}
+                <strong>Your account was created successfully.</strong>
+                <a href="/">Return to the homepage to log in.</a><br />
+                {% else %}
 
-            <form id="user_form" method="post" action="/account/register/"
-                    enctype="multipart/form-data">{% csrf_token %}
-                {% if user_exist %}
-                <strong>The username already exists. Please create another account.</strong><br>
+                <form id="user_form" method="post" action="/account/register/"
+                        enctype="multipart/form-data">{% csrf_token %}
+                    {% if user_exist %}
+                    <strong>The username already exists. Please create another account.</strong><br>
+                    {% endif %}
+
+                    <!-- Display each form. The as_p method wraps each element in a paragraph
+                         (<p>) element. This ensures each element appears on a new line,
+                         making everything look neater. -->
+                    <div class="register_input_title">Username:</div><div class="register_input"> {{ user_form.username }}</div>
+                    <div class="register_input_title">Password:</div><div class="register_input"> {{ user_form.password }}</div>
+                    <div class="register_input_title">Email:</div><div class="register_input"> {{ user_form.email }}</div>
+                    <div class="register_input_title">First name:</div><div class="register_input"> {{ user_form.first_name }}</div>
+                    <div class="register_input_title">Last name:</div><div class="register_input"> {{ user_form.last_name }}</div>
+                    <div class="register_input_title">Website:</div><div class="register_input"> {{ profile_form.website }}</div>
+                    <div class="register_input_title">University:</div><div class="register_input"> {{ profile_form.university }}</div>
+                    <div class="register_title_left">Picture:</div> {{ profile_form.picture }}
+
+                    <!-- Provide a button to click to submit the form. -->
+                    <input type="submit" name="submit" value="Register" />{% csrf_token %}
+                </form>
+
                 {% endif %}
-
-                <!-- Display each form. The as_p method wraps each element in a paragraph
-                     (<p>) element. This ensures each element appears on a new line,
-                     making everything look neater. -->
-                Username: {{ user_form.username }} <br>
-                Password: {{ user_form.password }} <br>
-                Email : {{ user_form.email }} <br>
-                First name : {{ user_form.first_name }} <br>
-                Last name : {{ user_form.last_name }} <br>
-                Website: {{ profile_form.website }} <br>
-                Picture: {{ profile_form.picture }} <br>
-                University: {{ profile_form.university }} <br>
-
-                <!-- Provide a button to click to submit the form. -->
-                <input type="submit" name="submit" value="Register" />{% csrf_token %}
-            </form>
-
-            {% endif %}
+            </div>
         </div>
     </body>
 </html>
