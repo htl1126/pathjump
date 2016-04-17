@@ -28,7 +28,6 @@ def update(request):
             if 'picture' in request.FILES:
                 profile.picture = request.FILES['picture']
             profile.save()
-            print 'Profile updated successful'
             update_success = True
         else:
             print profile_form.errors
