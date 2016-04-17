@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from django.conf.urls.static import static
+from . import settings
 
+# ref: http://stackoverflow.com/questions/5871730/need-a-minimal
+#             -django-file-upload-example
 urlpatterns = [
     url(r'^', include('home.urls')),
     url(r'^account/', include('account.urls', namespace='account')),
     url(r'^admin/', admin.site.urls),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
