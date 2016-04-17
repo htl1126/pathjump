@@ -1,0 +1,37 @@
+ {% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile Update</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+    </head>
+
+    <body>
+
+                {% if update_success %}
+                <strong>Your account was updated successfully.</strong>
+                {% else %}
+
+                <form id="profile_form" method="post" action="/account/update/"
+                        enctype="multipart/form-data">{% csrf_token %}
+                    {% if user_exist %}
+                    <strong>The username already exists. Please create another account.</strong><br>
+                    {% endif %}
+
+                    <!-- Display each form. The as_p method wraps each element in a paragraph
+                         (<p>) element. This ensures each element appears on a new line,
+                         making everything look neater. -->
+                         University: {{ profile_form.university | default_if_none:""}}<br>
+
+                    <!-- Provide a button to click to submit the form. -->
+                    <input type="submit" name="submit" value="Update" />{% csrf_token %}
+                </form>
+
+                {% endif %}
+    </body>
+</html>
