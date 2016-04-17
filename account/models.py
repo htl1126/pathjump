@@ -1,7 +1,15 @@
 from __future__ import unicode_literals
 
+import os
 from django.db import models
 from django.contrib.auth.models import User
+
+
+def update_filename(instance, filename):
+    path = 'profile_image/'
+    ext = filename.split('.')[-1]
+    format = '{0}.{1}'.format(instance.user.username, ext)
+    return os.path.join(path, format)
 
 
 # ref: http://stackoverflow.com/questions/20613315/
@@ -11,6 +19,8 @@ from django.contrib.auth.models import User
 #      get-userprofile-instances-in-template-having-onetoone-relationsh
 # ref: http://stackoverflow.com/questions/28748281/extending-user-profile
 #      -in-django-1-7
+# ref: http://stackoverflow.com/questions/2680391/in-django-changing-the
+#      -file-name-of-uploading-file
 class UserProfile(models.Model):
     # This line is required. Links UserProfile to a User model instance.
     user = models.OneToOneField(User, related_name='profile',
@@ -18,7 +28,7 @@ class UserProfile(models.Model):
 
     # The additional attributes we wish to include.
     website = models.URLField(blank=True)
-    picture = models.ImageField(upload_to='profile_image', blank=True)
+    picture = models.ImageField(upload_to=update_filename, blank=True)
     university = models.CharField(max_length=50)
 
     # Override the __unicode__() method to return out something meaningful!
