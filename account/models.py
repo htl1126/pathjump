@@ -27,9 +27,9 @@ class UserProfile(models.Model):
                                 primary_key=True)
 
     # The additional attributes we wish to include.
-    website = models.URLField(blank=True)
+    #website = models.URLField(blank=True)
     picture = models.ImageField(upload_to=update_filename, blank=True)
-    university = models.CharField(max_length=50)
+    #university = models.CharField(max_length=50)
 
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
