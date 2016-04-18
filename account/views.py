@@ -15,6 +15,8 @@ def profile(request):
 
 # ref: http://stackoverflow.com/questions/32942529/django-not-null-constraint
 #             -failed-userprofile-user-id-in-case-of-uploading-a-fil
+# ref: http://stackoverflow.com/questions/12828913/django-how-to-create-table
+#             -and-then-update-database-through-them
 def update(request):
     userform_obj = User.objects.get(username=request.user.username)
     profile_obj = UserProfile.objects.get(user_id=userform_obj.id)
