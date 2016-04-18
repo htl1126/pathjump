@@ -4,7 +4,11 @@
 <h2>
 {{ user_form.first_name }}
 {{ user_form.last_name }}<br>
-<img src="{{ profile_form.picture.url }}"><br>
+{% if profile_form.picture %}
+<img href="{{ profile_form.picture.url }}"><br>
+{% else %}
+No picture<br>
+{% endif %}
 </h2>
 {% else %}
    <h1>You should log in first to see you profile</h1>
