@@ -24,16 +24,20 @@
 $(document).ready(function(){
 
 
-    // $('#get_started_btn').click(function(){
-    //   $('#get_started_btn').css({
-    //     'display': 'none',
-    //   });
-    //   $('#myPopup').css({
-    //     'display': 'inline',
-    //     'padding-left': '40%',
-    //   });
+  $('#getJob').click(function(){
+    alert("I was clicked");
+  });
 
-    // });
+  function httpGetAsync(theUrl, callback)
+        {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.onreadystatechange = function() {
+                if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                    callback(xmlHttp.responseText);
+            }
+            xmlHttp.open("GET", theUrl, true); // true for asynchronous
+            xmlHttp.send(null);
+        }
 
 
 });
