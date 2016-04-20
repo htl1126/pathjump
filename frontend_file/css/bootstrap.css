@@ -222,6 +222,14 @@
 
 /*Below is CSS for Profile Page*/
 
+#profile_body{
+}
+#profile_row_1{
+  width: 90%;
+  margin-left: 5%;
+  background-color: #65b4ce;
+}
+
 #profile_pic{
   width: 300px;
   height: 300px;
@@ -230,13 +238,47 @@
   border: 6px solid #5b9bd5;
 }
 
+#job_recs{
+  border: 1px solid black;
+  height: 300px;
+  background-color: white;
+}
+
+#to_do_list{
+  border: 1px solid black;
+  height: 300px;
+  background-color: white;
+}
+
 #profile_text_1{
   height: 300px;
   /*background-color: gray;*/
 
 }
 
+#button_list{
+  margin-bottom: 3%;
+}
+.profile_button{
+  border: 1px solid black;
+  height: 50px;
+  text-align: center;
+  font-size: 2em;
+  background-color: #3b3d3e;
+  color: white;
+}
 
+.rec {
+  border: 1px solid black;
+  height: 28%;
+}
+
+.title{
+  text-align: center;
+  font-size: 1.3em;
+  margin-bottom: 4%;
+  margin-top: 3%;
+}
 #profile_info_1{
   font-size: 1.4em;
   margin-left: .3%;
