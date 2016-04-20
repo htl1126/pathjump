@@ -312,11 +312,28 @@
 }
 
 #education_text{
-  height: 300px;
-/*  background-color: gray;*/
-  margin-left: -53px;
 
 }
+
+#user_info_text{
+  display: none;
+}
+
+#work_experience_text{
+  display:none;
+}
+
+
+#school_logo{
+  margin-top: 3%;
+  height: 150px;
+  width: 15%;
+  background-image: url('../img/cornell_logo_new.png');
+  background-size: 150px 150px;
+  background-repeat: no-repeat;
+
+}
+
 
 #degree_info{
 
@@ -335,10 +352,10 @@
 }
 
 #work_ex{
-  margin-top:2%;
-  height:300px;
+
+
 /*  background-color: gray;*/
-  margin-left: -53px
+
 }
 
 #years_worked{

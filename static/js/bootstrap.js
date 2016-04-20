@@ -24,16 +24,7 @@
 $(document).ready(function(){
 
 
-    // $('#get_started_btn').click(function(){
-    //   $('#get_started_btn').css({
-    //     'display': 'none',
-    //   });
-    //   $('#myPopup').css({
-    //     'display': 'inline',
-    //     'padding-left': '40%',
-    //   });
 
-    // });
 
 
 });
