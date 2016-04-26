@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 import os
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils import timezone
 
 
 def update_filename(instance, filename):
@@ -27,9 +28,10 @@ class UserProfile(models.Model):
                                 primary_key=True)
 
     # The additional attributes we wish to include.
-    #website = models.URLField(blank=True)
+    website = models.URLField(blank=True)
     picture = models.ImageField(upload_to=update_filename, blank=True)
-    #university = models.CharField(max_length=50)
+    university = models.CharField(max_length=50, blank=True)
+    birthday = models.DateField(default=timezone.now)
 
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):

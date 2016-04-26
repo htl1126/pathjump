@@ -8,10 +8,13 @@ class UserForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('username','first_name', 'last_name', 'email', 'password')
+        fields = ('username', 'first_name', 'last_name', 'email', 'password')
 
 
 class UserProfileForm(forms.ModelForm):
+    birthday = forms.DateField(widget=forms.SelectDateWidget(
+        years=range(1980, 2016)))
+
     class Meta:
         model = UserProfile
-        fields = ('picture',)
+        fields = ('picture', 'website', 'university', 'birthday')
