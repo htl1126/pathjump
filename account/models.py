@@ -32,6 +32,10 @@ class UserProfile(models.Model):
     picture = models.ImageField(upload_to=update_filename, blank=True)
     university = models.CharField(max_length=50, blank=True)
     birthday = models.DateField(default=timezone.now)
+    country = models.CharField(max_length=20, blank=True)
+    city = models.CharField(max_length=20, blank=True)
+    address = models.CharField(max_length=20, blank=True)
+    zipcode = models.CharField(max_length=20, blank=True)
 
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
