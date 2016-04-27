@@ -307,10 +307,9 @@
 
 #job_image_1{
   margin-top: 5px;
-  background-image: url(img/Barclays-Logo1.png);
-  background-size: cover;
-  height: 65px;
-  width: 65px;
+/*  background-image: url(img/Barclays-Logo1.png);
+  background-size: cover;*/
+
   margin-left: 10%;
 }
 
@@ -329,10 +328,10 @@
 
 #job_image_2{
   margin-top: 5px;
-  background-image: url(img/chase20logo.png);
+/*  background-image: url(img/chase20logo.png);
   background-size: cover;
   height: 65px;
-  width: 75px;
+  width: 75px;*/
   margin-right: 5%;
 }
 
@@ -351,10 +350,10 @@
 
 #todo_image_3{
   margin-top: 5px;
-  background-image: url(img/Goldman_Sachs.svg-1.png);
+/*  background-image: url(img/Goldman_Sachs.svg-1.png);
   background-size: cover;
   height: 65px;
-  width: 75px;
+  width: 75px;*/
   margin-right: 5%;
 }
 
@@ -373,10 +372,10 @@
 
 #todo_image_1{
   margin-top: 5px;
-  background-image: url(img/Meetup.png);
+/*  background-image: url(img/Meetup.png);
   background-size: cover;
   height: 55px;
-  width: 75px;
+  width: 75px;*/
   margin-right: 5%;
   margin-left: 3%;
 }
