@@ -35,7 +35,7 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <div class="row" id="profile_row_1">
+<div class="row" id="profile_row_1">
     <div class="col-lg-1">
     </div>
     <div class="col-lg-3" id="profile_pic">
@@ -46,9 +46,36 @@
       <div class="row title">
         Job Recommendations
       </div>
-      <div class="row rec"></div>
-      <div class="row rec"></div>
-      <div class="row rec"></div>
+      <div class="row rec">
+        <div class='col-sm-4' id="job_company_1">
+          Barclays
+        </div>
+        <div class='col-sm-4' id="job_position_1">
+          <a href="https://barclays.taleo.net/careersection/application.jss?lang=en_GB&type=1&csNo=2&portal=101430233&reqNo=2217070&isOnLogoutPage=true">Analyst</a>
+        </div>
+        <div class='col-sm-4' id='job_image_1'>
+        </div>
+      </div>
+      <div class="row rec">
+        <div class='col-sm-4' id='job_image_2'>
+        </div>
+        <div class='col-sm-4' id="job_company_2">
+          JP Morgan
+        </div>
+        <div class='col-sm-4' id="job_position_2">
+          <a href="http://careers.jpmorgan.com/careers/programs/investor-services-fulltime-analyst">Analyst</a>
+        </div>
+      </div>
+      <div class="row rec">
+        <div class='col-sm-4' id="job_company_3">
+          Goldman Sachs
+        </div>
+        <div class='col-sm-4' id="job_position_3">
+          <a href="http://www.goldmansachs.com/careers/why-goldman-sachs/our-divisions/investment-banking/positions/analyst.html">Analyst</a>
+        </div>
+        <div class='col-sm-4' id='job_image_3'>
+        </div>
+      </div>
     </div>
     <div class="col-lg-1">
     </div>
@@ -56,234 +83,171 @@
        <div class="row title">
         To Do List
       </div>
-      <div class="row rec"></div>
-      <div class="row rec"></div>
+      <div class="row rec">
+        <div class='col-sm-4' id='todo_image_1'>
+        </div>
+        <div class='col-sm-4' id="todo_text_1">
+          <a href="http://www.meetup.com/New-York-Finance-And-Banking-Meetup/">Local Finance Meetup</a>
+        </div>
+        <div class='col-sm-3' id="todo_check_1">
+          <label><input type="checkbox" value=""></label>
+        </div>
+      </div>
+      <div class="row rec">
+        <div class='col-sm-8' id='todo_text_2'>
+          Update 'Skills' on your Pathjump Profile!
+        </div>
+        <div class='col-sm-3' id="todo_check_2">
+          <label><input type="checkbox" value=""></label>
+        </div>
+      </div>
       <div class="row rec"></div>
     </div>
-  </div>
-  <div class="row_break">
   </div>
 
   <div class="row" id="button_list">
     <div class="col-lg-2">
     </div>
-    <div class="col-lg-2 profile_button">
+    <div class="col-lg-2 profile_button" id="education_display_button">
       Education
     </div>
+    <div class="col-lg-1 button_list_background">
+    </div>
+    <div class="col-lg-2 profile_button" id="experience_display_button">
+      User Info
+    </div>
     <div class="col-lg-1">
     </div>
-    <div class="col-lg-2 profile_button">
+    <div class="col-lg-2 profile_button" id="skills_display_button">
       Experience
     </div>
-    <div class="col-lg-1">
-    </div>
-    <div class="col-lg-2 profile_button">
-      Skills
-    </div>
     <div class="col-lg-2">
     </div>
 
   </div>
 
-  <div class="row">
-    <div class="col-lg-2">
-    </div>
-    <div class="col-lg-4" id="education_text">
-      <h1>Education</h1>
-      <div class="row" id="profile_info_1">
-        <div>
-          <span id="university_name">University Name
-          </span>
-          <hr>
-          <span id="degree_info">Masters Degree class of 2017
-          </span>
-        </div>
-      <div class="row" id="profile_info_2">
-        <div id="about_me">
-          <span class="bold_me">Enrolled: </span><span id="enrolled_input">May 2015</span>
-        </div>
+    <div class="row" id="education_text">
+      <div class="col-lg-1 profile_margin">
       </div>
-      <div class="row" id="profile_info_3">
-        <div id="fun_fact">
-          <span class="bold_me">Majors: </span><span id="majors_input">Economics, Philosophy</span>
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4" >
+        <h1>Education</h1>
+        <div class="row" id="profile_info_1">
+          <div>
+            <span id="university_name">University Name
+            </span>
+            <hr>
+            <span id="degree_info">Masters Degree class of 2017
+            </span>
+          </div>
+        <div class="row" id="profile_info_2">
+          <div id="about_me">
+            <span class="bold_me">Enrolled: </span><span id="enrolled_input">May 2015</span>
+          </div>
         </div>
-      </div>
-      <div class="row" id="profile_info_4">
-        <div id="languages">
-          <span class="bold_me">GPA:
-          </span>
-          <span id="gpa_input">4.0
-          </span>
+        <div class="row" id="profile_info_3">
+          <div id="fun_fact">
+            <span class="bold_me">Majors: </span><span id="majors_input">Economics, Philosophy</span>
+          </div>
         </div>
-      </div>
-      </div>
-      <!-- <img src="img/images.png"> -->
-    </div>
-    <div class="col-lg-4" id="profile_text_1">
-      <h1>User Name</h1>
-      <div class="row" id="profile_info_1">
-        <div><span id="university_name">University Name</span> || <span id="graduation_date">Class of 2017</span></div>
-      <hr>
-      <div class="row" id="profile_info_2">
-        <div id="about_me">
-          <span class="bold_me">About Me: </span><span id="about_me_input">I did some things</span>
+        <div class="row" id="profile_info_4">
+          <div id="languages">
+            <span class="bold_me">GPA:
+            </span>
+            <span id="gpa_input">4.0
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="row" id="profile_info_3">
-        <div id="fun_fact">
-          <span class="bold_me">Fun Fact: </span><span id="fun_fact_input">I am a fun fact</span>
         </div>
+        <!-- <img src="img/images.png"> -->
       </div>
-      <div class="row" id="profile_info_4">
-        <div id="languages">
-          <span class="bold_me">Languages Spoken: </span><span id="language_input">I am a language</span>
-        </div>
+      <!-- <div class="col-sm-2">
       </div>
+      <div class="col-sm-4" id="school_logo">
+      </div> -->
+      <div class="col-lg-5">
+      </div>
+      <div class="col-lg-1 profile_margin">
       </div>
     </div>
-  </div>
-  </div>
-  <div class='row' id="work_experience_text">
-    <div class="col-lg-4">
-    </div>
-    <div class="col-lg-7" id="work_ex">
-      <h1>Work History</h1>
-      <div class="row" id="profile_info_1">
-        <div>
-          <span id="years_worked">Years of experience:
-          </span>
-          <span id="years_input">3
-          </span>
-        </div>
+
+    <div class="row" id="user_info_text">
+      <div class="col-lg-1 profile_margin">
+      </div>
+      <div class="col-lg-1">
+      </div>
+
+      <div class="col-lg-4" id="profile_text_1">
+        <h1>User Name</h1>
+        <div class="row" id="profile_info_1">
+          <div><span id="university_name">University Name</span> || <span id="graduation_date">Class of 2017</span></div>
         <hr>
-      <div class="row" id="profile_info_2">
-        <div id="about_me">
-          <span class="bold_me">Company Name: </span><span id="company_input">Google</span>
+        <div class="row" id="profile_info_2">
+          <div id="about_me">
+            <span class="bold_me">About Me: </span><span id="about_me_input">I did some things</span>
+          </div>
+        </div>
+        <div class="row" id="profile_info_3">
+          <div id="fun_fact">
+            <span class="bold_me">Fun Fact: </span><span id="fun_fact_input">I am a fun fact</span>
+          </div>
+        </div>
+        <div class="row" id="profile_info_4">
+          <div id="languages">
+            <span class="bold_me">Languages Spoken: </span><span id="language_input">I am a language</span>
+          </div>
+        </div>
         </div>
       </div>
-      <div class="row" id="profile_info_3">
-        <div id="fun_fact">
-          <span class="bold_me">Job Title: </span><span id="job_title_input">CEO</span>
+      <div class="col-lg-5">
+      </div>
+      <div class="col-lg-1 profile_margin">
+      </div>
+    </div>
+
+    <div class='row' id="work_experience_text">
+      <div class="col-lg-1 profile_margin">
+      </div>
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4" id="work_ex">
+        <h1>Work History</h1>
+        <div class="row" id="profile_info_1">
+          <div>
+            <span id="years_worked">Years of experience:
+            </span>
+            <span id="years_input">3
+            </span>
+          </div>
+        </div>
+          <hr>
+        <div class="row" id="profile_info_2">
+          <div id="about_me">
+            <span class="bold_me">Company Name: </span><span id="company_input">Google</span>
+          </div>
+        </div>
+        <div class="row" id="profile_info_3">
+          <div id="fun_fact">
+            <span class="bold_me">Job Title: </span><span id="job_title_input">CEO</span>
+          </div>
+        </div>
+        <div class="row" id="profile_info_4">
+          <div id="languages">
+            <span class="bold_me">Description:
+            </span>
+            <span id="job_description_input">I ran the compnay and made lots of money
+            </span>
+          </div>
         </div>
       </div>
-      <div class="row" id="profile_info_4">
-        <div id="languages">
-          <span class="bold_me">Description:
-          </span>
-          <span id="job_description_input">I ran the compnay and made lots of money
-          </span>
-        </div>
+      <div class="col-lg-5">
       </div>
+      <div class="col-lg-1 profile_margin">
       </div>
 
     </div>
 
-  </div>
-
-   <div class="row" id="job_roll">
-    <div class='col-sm-6'>
-
-<style type='text/css'>#indJobContent{padding-bottom: 5px;}#indJobContent .company_location{font-size: 11px;overflow: hidden;display:block;}#indJobContent.wide .job{display:block;float:left;margin-right: 5px;width: 135px;overflow: hidden}#indeed_widget_wrapper{position: relative;font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;font-size: 13px;font-weight: normal;line-height: 18px;padding: 10px;height: auto;overflow: hidden;}#indeed_widget_header{font-size:18px; padding-bottom: 5px; }#indeed_search_wrapper{clear: both;font-size: 12px;margin-top: 5px;padding-top: 5px;}#indeed_search_wrapper label{font-size: 12px;line-height: inherit;text-align: left; margin-right: 5px;}#indeed_search_wrapper input[type='text']{width: 100px; font-size: 11px; }#indeed_search_wrapper #qc{float:left;}#indeed_search_wrapper #lc{float:right;}#indeed_search_wrapper.stacked #qc, #indeed_search_wrapper.stacked #lc{float: none; clear: both;}#indeed_search_wrapper.stacked input[type='text']{width: 150px;}#indeed_search_wrapper.stacked label{display: block;padding-bottom: 5px;}#indeed_search_footer{width:295px; padding-top: 5px; clear: both;}#indeed_link{position: absolute;bottom: 1px;right: 5px;clear: both;font-size: 11px; }#indeed_link a{text-decoration: none;}#results .job{padding: 1px 0px;}#pagination { clear: both; }</style><style type='text/css'>
-#indeed_widget_wrapper{ width: 600px; height: 300px; background: #FFFFFF;}
-#indeed_widget_wrapper{ border: 1px solid #DDDDDD; }
-#indeed_widget_wrapper, #indeed_link a{ color: #000000;}
-#indJobContent, #indeed_search_wrapper{ border-top: 1px solid #DDDDDD; }
-#indJobContent a { color: #00c; }
-#indeed_widget_header{ color: #000000; }
-</style>
-<script type='text/javascript'>
-var ind_pub = '3194778322493656';
-var ind_el = 'indJobContent';
-var ind_pf = '';
-var ind_q = 'Finance';
-var ind_l = 'NYC';
-var ind_chnl = 'none';
-var ind_n = 4;
-var ind_d = 'http://www.indeed.com';
-var ind_t = 40;
-var ind_c = 30;
-</script>
-<script type='text/javascript' src='http://www.indeed.com/ads/jobroll-widget-v3.js'></script>
-<div id='indeed_widget_wrapper' style=''>
-<div id='indeed_widget_header'>Recommended Jobs</div>
-
-<div id='indJobContent' class=""></div>
-
-<div id='indeed_search_wrapper'>
-<script type='text/javascript'>
-function clearDefaults() {
-var formInputs = document.getElementById('indeed_jobform').elements;
-for(var i = 0; i < formInputs.length; i++) {
-if(formInputs[i].value == 'title, keywords' || formInputs[i].value == 'city, state, or zip') {
-formInputs[i].value = '';
-}
-}
-}
-</script>
-<form onsubmit='clearDefaults();' method='get' action='http://www.indeed.com/jobs' id='indeed_jobform' target="_new">
-<div id="qc"><label>What:</label><input type='text' onfocus='this.value=""' value='title, keywords' name='q' id='q'></div>
-<div id="lc"><label>Where:</label><input type='text' onfocus='this.value=""' value='city, state, or zip' name='l' id='l'></div>
-<div id='indeed_search_footer'>
-<div style='float:left'><input type='submit' value='Find Jobs' class='findjobs'></div>
-</div>
-<input type='hidden' name='indpubnum' id='indpubnum' value='3194778322493656'>
-</form>
-</div>
-
-<div id='indeed_link'>
-<a title="Job Search" href="http://www.indeed.com/" target="_new">jobs by <img alt=Indeed src='http://www.indeed.com/p/jobsearch.gif' style='border: 0;vertical-align: bottom;'>
-</a>
-</div>
-</div>
-
-
-    </div>
-    <div class='col-sm-6'>
-      <form action='http://www.indeed.com/jobs' METHOD='GET'>
-        <input type="hidden" name="indpubnum" value="3194778322493656">
-
-        <table cellspacing='0' style='font-family: arial'>
-            <tr>
-                <td style='font-size: 16px; color: #F60'><b>what</b></td>
-                <td style='font-size: 16px; color: #F60'><b>where</b></td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td><input name='q' value='' size='25'></td>
-                <td><input name='l' value='' size=''></td>
-                <td><input type='submit' value='Find Jobs'/></td>
-            </tr>
-            <tr>
-                <td valign='top' style='font-size: 10px'>job title, keywords or company</td>
-                <td colspan='2'  valign='top' style='font-size: 10px; padding: 0; margin: 0; border: 0' >
-                    <table cellpadding='0' width='100%' style='padding: 0; margin: 0; border: 0'>
-                        <tr>
-                            <td valign='top' style='font-size: 10px; padding: 0; margin: 0; border: 0'>city, state or zip</td>
-                            <td style='font-size: 13px' align='right'>
-
-                                <span id='indeed_at'>
-                                    <a href="http://www.indeed.com/?indpubnum=3194778322493656" style="text-decoration:none; color: #000">jobs by</a>
-                                    <a href="http://www.indeed.com/?indpubnum=3194778322493656" title="Job Search">
-                                        <img src="http://www.indeed.com/p/jobsearch.gif" style="border: 0;vertical-align: middle;" alt="job search">
-                                    </a>
-                                </span>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </form>
-
-
-    </div>
-  </div>
-
-  <div>
-    <div class="row" id="jobs_test">
-      <button id="getJob">Jobs</button>
-    </div>
-  </div>
 
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="{% static "js/bootstrap.js" %}"></script>
