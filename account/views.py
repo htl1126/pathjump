@@ -1,6 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import UserForm, UserProfileForm
 from .models import User, UserProfile
+from django.contrib.auth import login, authenticate
 
 
 def onboard(request):
@@ -47,6 +48,8 @@ def update(request):
                    'update_success': update_success})
 
 
+# ref: http://stackoverflow.com/questions/33041592/redirect-to-home-as
+#             -a-logged-in-user-after-successful-registration
 def register(request):
     registered = False
     user_exist = False
@@ -64,6 +67,12 @@ def register(request):
                 profile.picture = request.FILES['picture']
             profile.save()
             registered = True
+            password = request.POST['password']
+            authenticated = authenticate(username=user.username,
+                                         password=password)
+            if authenticated:
+                login(request, authenticated)
+                return redirect('/')
         else:
             print user_form.errors, profile_form.errors
             user_exist = True
