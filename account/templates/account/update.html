@@ -19,15 +19,14 @@
 
                 <form id="profile_form" method="post" action="/account/update/"
                         enctype="multipart/form-data">{% csrf_token %}
-                    {% if user_exist %}
-                    <strong>The username already exists. Please create another account.</strong><br>
-                    {% endif %}
-
-                    <!-- Display each form. The as_p method wraps each element in a paragraph
-                         (<p>) element. This ensures each element appears on a new line,
-                         making everything look neater. -->
-
-                    <!-- Provide a button to click to submit the form. -->
+                    Website: {{profile_form.website}}<br>
+                    University: {{profile_form.university}}<br>
+                    Date of Birth: {{profile_form.birthday}}<br>
+                    Country: {{profile_form.country}}<br>
+                    City: {{profile_form.city}}<br>
+                    Address: {{profile_form.address}}<br>
+                    Zip Code: {{profile_form.zipcode}}<br>
+                    Profile Picture: {{profile_form.picture}}<br>
                     <input type="submit" name="submit" value="Update" />{% csrf_token %}
                 </form>
 
