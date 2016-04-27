@@ -21,8 +21,30 @@
 
 
 
+
 $(document).ready(function(){
 
+  var education = document.getElementById('#education_text');
+  var experience = document.getElementById('#user_info_text');
+  var skills = document.getElementById('#work_experience_text');
+
+  $('#education_display_button').click(function(){
+    document.getElementById('education_text').style.display = 'block';
+    document.getElementById('user_info_text').style.display = 'none';
+    document.getElementById('work_experience_text').style.display = 'none';
+  });
+
+  $('#experience_display_button').click(function(){
+    document.getElementById('education_text').style.display = 'none';
+    document.getElementById('user_info_text').style.display = 'block';
+    document.getElementById('work_experience_text').style.display = 'none';
+  });
+
+  $('#skills_display_button').click(function(){
+    document.getElementById('education_text').style.display = 'none';
+    document.getElementById('user_info_text').style.display = 'none';
+    document.getElementById('work_experience_text').style.display = 'block';
+  });
 
   $('#getJob').click(function(){
     alert("I was clicked");
@@ -41,6 +63,7 @@ $(document).ready(function(){
 
 
 });
+
 
 
 
