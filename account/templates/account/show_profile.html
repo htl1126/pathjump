@@ -1,0 +1,25 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Show Profile</title>
+</head>
+<body>
+  {{ user.username }}<br>
+  {{ user.email }}<br>
+  {{ user.first_name }}<br>
+  {{ user.last_name }}<br>
+  {{ profile_form.university }}<br>
+  {{ profile_form.birthday }}<br>
+  {{ profile_form.country }}<br>
+  {{ profile_form.city }}<br>
+  {{ profile_form.address }}<br>
+  {{ profile_form.zipcode }}<br>
+  {% if profile_form.picture %}
+    <img src="{{profile_form.picture.url}}"><br>
+  {% else %}
+    No picture<br>
+  {% endif %}
+</body>
+</html>

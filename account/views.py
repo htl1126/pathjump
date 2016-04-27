@@ -13,6 +13,12 @@ def profile(request):
                    'profile_form': request.user.profile})
 
 
+def show_profile(request):
+    return render(request, 'account/show_profile.html',
+                  {'user_form': request.user,
+                   'profile_form': request.user.profile})
+
+
 # ref: http://stackoverflow.com/questions/32942529/django-not-null-constraint
 #             -failed-userprofile-user-id-in-case-of-uploading-a-fil
 # ref: http://stackoverflow.com/questions/12828913/django-how-to-create-table
