@@ -38,7 +38,12 @@
 <div class="row" id="profile_row_1">
     <div class="col-lg-1">
     </div>
-    <div class="col-lg-3" id="profile_pic">
+    <div class="col-lg-3">
+      {% if profile_form.picture %}
+    <img id="profile_pic" src="{{profile_form.picture.url}}"><br>
+      {% else %}
+        No picture<br>
+      {% endif %}
     </div>
     <div class="col-lg-1">
     </div>
@@ -183,7 +188,7 @@
       </div>
 
       <div class="col-lg-4" id="profile_text_1">
-        <h1>User Name</h1>
+        <h1>{{ user.username }}</h1>
         <div class="row" id="profile_info_1">
           <div><span id="university_name">{{ profile_form.university }}</span> || <span id="graduation_date">Class of 2017</span></div>
         <hr>
