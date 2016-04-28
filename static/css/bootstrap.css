@@ -1,3 +1,4 @@
+
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -238,7 +239,7 @@
   width: 300px;
   height: 300px;
   border-radius: 150px;
-  background: url(http://zblogged.com/wp-content/uploads/2015/11/17.jpg) no-repeat;
+/*  background: url(http://zblogged.com/wp-content/uploads/2015/11/17.jpg) no-repeat;*/
   border: 6px solid #5b9bd5;
 }
 
