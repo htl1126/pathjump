@@ -23,5 +23,6 @@ from . import settings
 urlpatterns = [
     url(r'^', include('home.urls')),
     url(r'^account/', include('account.urls', namespace='account')),
+    url(r'^job/', include('job.urls', namespace='job')),
     url(r'^admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
