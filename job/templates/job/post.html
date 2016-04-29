@@ -1,0 +1,29 @@
+ {% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create a job post</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+           {% if post_success %}
+                    <strong>Post created successfully</strong>
+           {% else %}
+                <form id="job_form" method="post" action="/job/post/"
+                        enctype="multipart/form-data">{% csrf_token %}
+                    Title: {{ job_form.title }}<br>
+                    Company: {{ job_form.company }}<br>
+                    Location: {{ job_form.location }}<br>
+                    Description: {{ job_form.description }}<br>
+                    Industry: {{ job_form.industry }}<br>
+                    Employment Type: {{ job_form.employment_type }}<br>
+                    Experience: {{ job_form.experience }}<br>
+                    Job Function: {{ job_form.job_function }}<br>
+                    Company Logo: {{ job_form.company_logo }}<br>
+                    <input type="submit" name="submit" value="Post" />{% csrf_token %}
+                </form>
+            {% endif %}
+    </body>
+</html>

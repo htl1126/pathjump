@@ -12,7 +12,8 @@ class JobPost(models.Model):
     employment_type = models.CharField(max_length=50, blank=True)
     experience = models.CharField(max_length=50, blank=True)
     job_function = models.CharField(max_length=50, blank=True)
-    company_logo = models.ImageField(upload_to='company_logo')
+    company_logo = models.ImageField(upload_to='company_logo', blank=True) # same pic for
+                                                               # same company
 
     def __unicode__(self):
         return self.title
