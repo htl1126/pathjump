@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import JobPostForm
 from .models import JobPost
 
@@ -32,6 +32,8 @@ def job_board(request, page_number=None):
     max_page_number = job_post_size / page_size
     if job_post_size % 3 != 0:
         max_page_number += 1
+    if page_number > max_page_number:
+        return redirect('/job/board/1/')
     page_number_list = range(min_page_number, max_page_number + 1)
     first_post_in_page = (page_number - 1) * page_size
     if first_post_in_page > job_post_size:
