@@ -31,6 +31,10 @@
               <li><a href='/account/profile'>Profile</a></li>
           {% endif %}
             <li class="divider-vertical"></li>
+          {% if user.is_authenticated %}
+              <li><a href='/job/board'>Jobs</a></li>
+          {% endif %}
+              <li class="divider-vertical"></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           {% if user.is_authenticated %}
