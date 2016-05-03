@@ -1,0 +1,22 @@
+ {% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Board</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+      <ul>
+        {% for post in job_list %}
+          <li><a href="/job/show_post/{{ post.id }}" target="_blank">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <a href="/job/board/1">First</a>&nbsp;
+      {% for number in page_number_list %}
+      <a href="/job/board/{{ number }}">{{ number }}</a>&nbsp;
+      {% endfor %}
+      <a href="/job/board/{{ page_number_list|length }}">Last</a>
+    </body>
+</html>

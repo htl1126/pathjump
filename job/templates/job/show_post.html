@@ -1,0 +1,16 @@
+ {% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Board</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+      Title: {{ job_post.title }}<br>
+      Company: {{ job_post.company }}<br>
+      Location: {{ job_post.location }}<br>
+      Description: {{ job_post.description }}<br>
+    </body>
+</html>
