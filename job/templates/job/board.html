@@ -5,9 +5,40 @@
     <head>
         <title>Job Board</title>
         <meta charset="UTF-8">
+        <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
     </head>
 
+
     <body>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">Pathjump</a>
+          </div>
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="/">Home <span class="sr-only">(current)</span></a></li>
+              <li class="divider-vertical"></li>
+              {% if user.is_authenticated %}
+                  <li><a href='/account/profile'>Profile</a></li>
+              {% endif %}
+                <li class="divider-vertical"></li>
+              {% if user.is_authenticated %}
+                <li><a href='/job/board'>Jobs</a></li>
+              {% endif %}
+              <li class="divider-vertical"></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              {% if user.is_authenticated %}
+                  <li><a href="/account/logout">Logout</a></li>
+              {% else %}
+                  <li><a href="/account/login">Login</a></li>
+                  <li><a href="/account/register">Register</a></li>
+              {% endif %}
+            </ul>
+          </div>
+      </nav>
+
       <ul>
         {% for post in job_list %}
           <li><a href="/job/show_post/{{ post.id }}" target="_blank">{{ post.title }}</a></li>
@@ -19,4 +50,8 @@
       {% endfor %}
       <a href="/job/board/{{ page_number_list|length }}">Last</a>
     </body>
+
+
+  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="{% static "js/bootstrap.js" %}"></script>
 </html>
