@@ -76,7 +76,8 @@
                     <div class="register_input_title">City:</div><div class="register_input"> {{ profile_form.city }}</div>
                     <div class="register_input_title">Address:</div><div class="register_input"> {{ profile_form.address }}</div>
                     <div class="register_input_title">Zip Code:</div><div class="register_input"> {{ profile_form.zipcode }}</div>
-                    <div class="register_title_left">Picture:</div> {{ profile_form.picture }}
+                    <div class="register_input_title">Tags:</div><div class="register_input"> {{ profile_form.tags }}</div>
+                    <div class="register_title_left">Picture:</div> {{ profile_form.picture }}</div>
 
                     <!-- Provide a button to click to submit the form. -->
                     <input type="submit" name="submit" value="Register" />{% csrf_token %}

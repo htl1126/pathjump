@@ -36,6 +36,7 @@ class UserProfile(models.Model):
     city = models.CharField(max_length=20, blank=True)
     address = models.CharField(max_length=20, blank=True)
     zipcode = models.CharField(max_length=20, blank=True)
+    tags = models.CharField(max_length=200, blank=True)
 
     # Override the __unicode__() method to return out something meaningful!
     def __unicode__(self):
