@@ -161,19 +161,19 @@
           </div>
         <div class="row" id="profile_info_2">
           <div id="about_me">
-            <span class="bold_me">Enrolled: </span><span id="enrolled_input">May 2015</span>
+            <span class="bold_me">Graduation Date: </span><span id="enrolled_input">{{ profile_form.university_grad_date_1 }}</span>
           </div>
         </div>
         <div class="row" id="profile_info_3">
           <div id="fun_fact">
-            <span class="bold_me">Majors: </span><span id="majors_input">Economics, Philosophy</span>
+            <span class="bold_me">Majors: </span><span id="majors_input">{{ profile_form.major_1 }}</span>
           </div>
         </div>
         <div class="row" id="profile_info_4">
           <div id="languages">
             <span class="bold_me">GPA:
             </span>
-            <span id="gpa_input">4.0
+            <span id="gpa_input">{{ profile_form.gpa_1 }}
             </span>
           </div>
         </div>
@@ -203,17 +203,17 @@
         <hr>
         <div class="row" id="profile_info_2">
           <div id="about_me">
-            <span class="bold_me">About Me: </span><span id="about_me_input">I did some things</span>
+            <span class="bold_me">About Me: </span><span id="about_me_input">{{ profile_form.about_me }}</span>
           </div>
         </div>
         <div class="row" id="profile_info_3">
           <div id="fun_fact">
-            <span class="bold_me">Fun Fact: </span><span id="fun_fact_input">I am a fun fact</span>
+            <span class="bold_me">Fun Fact: </span><span id="fun_fact_input">{{ profile_form.fun_fact }}</span>
           </div>
         </div>
         <div class="row" id="profile_info_4">
           <div id="languages">
-            <span class="bold_me">Languages Spoken: </span><span id="language_input">I am a language</span>
+            <span class="bold_me">Skills: </span><span id="language_input">{{ profile_form.skill }}</span>
           </div>
         </div>
         </div>
@@ -242,19 +242,20 @@
           <hr>
         <div class="row" id="profile_info_2">
           <div id="about_me">
-            <span class="bold_me">Company Name: </span><span id="company_input">Google</span>
+            <span class="bold_me">Company Name: </span><span id="company_input">{{ profile_form.company_1 }}</span>
           </div>
         </div>
         <div class="row" id="profile_info_3">
           <div id="fun_fact">
-            <span class="bold_me">Job Title: </span><span id="job_title_input">CEO</span>
+            <span class="bold_me">Job Title: </span><span id="job_title_input">{{ profile_form.job_title_1 }}</span>
           </div>
         </div>
         <div class="row" id="profile_info_4">
           <div id="languages">
             <span class="bold_me">Description:
             </span>
-            <span id="job_description_input">I ran the compnay and made lots of money
+            <span id="job_description_input">
+              {{ profile_form.job_desc_1 }}
             </span>
           </div>
         </div>
