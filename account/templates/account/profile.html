@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="keywords" content="">
-
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
   <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
 </head>
 <body id="profile_body">
@@ -33,7 +33,12 @@
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
+          {% if user.is_authenticated %}
+              <li><a href="/account/logout">Logout</a></li>
+          {% else %}
+              <li><a href="/account/login">Login</a></li>
+              <li><a href="/account/register">Register</a></li>
+          {% endif %}
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -55,12 +60,12 @@
       <div class="row title">
         Job Recommendations
       </div>
-      <div class="row rec">
+      <div class="row rec" data-toggle="modal" data-target="#myModal">
         <div class='col-sm-4' id="job_company_1">
           Barclays
         </div>
         <div class='col-sm-4' id="job_position_1">
-          <a href="https://barclays.taleo.net/careersection/application.jss?lang=en_GB&type=1&csNo=2&portal=101430233&reqNo=2217070&isOnLogoutPage=true">Analyst</a>
+          <span>Project Analyst</span>
         </div>
         <div class='col-sm-4' id='job_image_1'>
           <img src="{% static "img/Barclays-Logo1.png" %}" style="width:65px;height65px">
@@ -259,6 +264,110 @@
       <div class="col-lg-1 profile_margin">
       </div>
 
+    </div>
+
+
+    <!-- Job Posting Modal -->
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Barclays Project Analyst <a href="https://barclays.taleo.net/careersection/application.jss?lang=en_GB&type=1&csNo=2&portal=101430233&reqNo=2217070&isOnLogoutPage=true">Link to Page</a> </h4>
+          </div>
+          <div class="modal-body">
+            <div class='row' id="modal_row_1">
+              <div class='col-sm-1'>
+              </div>
+              <div class='col-sm-2' id='company_logo'>
+              </div>
+              <div class='col-sm-1'>
+              </div>
+              <div  class="col-sm-6" id='job_description'>
+                The Remediation Office is looking for a Program Management Office (PMO) Analyst with 1-3 years experience in coordinating program requirements with senior management and key stakeholders.
+              </div>
+            </div>
+            <div class='row' id="skill_gap_row">
+              Skills For The Job
+            </div>
+            <div class='row' id='modal_row_2'>
+              <div class='col-sm-1'>
+              </div>
+              <div class='col-sm-4' id="percent_complete_image">
+              </div>
+              <div class='col-sm-1'>
+              </div>
+              <div class='col-sm-6'>
+                <div class='row'>
+                  You meet 3 out of 4 Qualifications
+                </div>
+                <div class='row skill_match checked'>
+                   <input type="checkbox" class="large" checked="checked"/> GPA of 3.5 or Higher
+                </div>
+                <div class='row skill_match checked'>
+                   <input type="checkbox" class="large" checked="checked"/> Previous Finance Internship
+                </div>
+                <div class='row skill_match checked'>
+                  <input type="checkbox" class="large" checked="checked"/> Business or Finance Major
+                </div>
+                <div class='row skill_match'>
+                  <input type="checkbox" class="large"/> Financial Modeling Experience
+                </div>
+              </div>
+            </div>
+            <div class='row' id="recommendation_title">
+              Our Recommendations
+            </div>
+            <div class='row' id='modal_row_3'>
+              <div class='col-sm-2'>
+              </div>
+              <div class='col-sm-2 rec_box' id="meetup_logo">
+              </div>
+              <div class='col-sm-1'>
+              </div>
+              <div class='col-sm-2 rec_box' id='udemy_logo'>
+              </div>
+              <div class='col-sm-1'>
+              </div>
+              <div class='col-sm-2 rec_box' id='excel_logo'>
+              </div>
+              <div class='col-sm-2'>
+              </div>
+            </div>
+            <div class='row' id='rec_titles'>
+              <div class='col-sm-2'>
+              </div>
+              <div class='col-sm-2 rec_label'>
+                <a href="http://www.meetup.com/New-York-Finance-And-Banking-Meetup/events/229989333/">
+                Finance Meetup
+                </a>
+              </div>
+              <div class='col-sm-1'>
+              </div>
+              <div class='col-sm-2 rec_label'>
+                <a href="https://www.udemy.com/financial-modeling/">
+                Udemy Course
+                </a>
+              </div>
+              <div class='col-sm-1'>
+              </div>
+              <div class='col-sm-2 rec_label'>
+                <a href="http://www.tutorialspoint.com/excel/excel_getting_started.htm">
+                Macro Tutorial
+                </a>
+              </div>
+              <div class='col-sm-2'>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Apply Here</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
 
