@@ -22,6 +22,7 @@
                     Experience: {{ job_form.experience }}<br>
                     Job Function: {{ job_form.job_function }}<br>
                     Company Logo: {{ job_form.company_logo }}<br>
+                    Tags: {{ job_form.tags }}<br>
                     <input type="submit" name="submit" value="Post" />{% csrf_token %}
                 </form>
             {% endif %}

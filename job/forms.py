@@ -10,4 +10,4 @@ class JobPostForm(forms.ModelForm):
         model = JobPost
         fields = ('title', 'company', 'location', 'description', 'industry',
                   'employment_type', 'experience', 'job_function',
-                  'company_logo')
+                  'company_logo', 'tags')

@@ -14,6 +14,7 @@ class JobPost(models.Model):
     job_function = models.CharField(max_length=50, blank=True)
     company_logo = models.ImageField(upload_to='company_logo', blank=True) # same pic for
                                                                # same company
+    tags = models.CharField(max_length=200, blank=True)
 
     def __unicode__(self):
         return self.title
