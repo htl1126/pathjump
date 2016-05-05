@@ -30,8 +30,8 @@ class UserProfile(models.Model):
     # The additional attributes we wish to include.
     picture = models.ImageField(upload_to=update_filename, blank=True)
     university_grad_date_1 = models.DateField(default=timezone.now)
-    major_1 = models.CharField(max_length=20, default='')
-    gpa_1 = models.CharField(max_length=10, default='')
+    major_1 = models.CharField(max_length=20, blank=True)
+    gpa_1 = models.CharField(max_length=10, blank=True)
     university_grad_date_2 = models.DateField(default=timezone.now)
     major_2 = models.CharField(max_length=20, blank=True)
     gpa_2 = models.CharField(max_length=10, blank=True)
