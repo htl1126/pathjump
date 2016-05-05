@@ -7,7 +7,9 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 
-
+.home_body{
+  font-family: Quicksand;
+}
 #header {
   padding-top: 1%;
   padding-bottom: 1%;
