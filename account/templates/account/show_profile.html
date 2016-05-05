@@ -10,12 +10,33 @@
   {{ user.email }}<br>
   {{ user.first_name }}<br>
   {{ user.last_name }}<br>
-  {{ profile_form.university }}<br>
-  {{ profile_form.birthday }}<br>
-  {{ profile_form.country }}<br>
-  {{ profile_form.city }}<br>
-  {{ profile_form.address }}<br>
-  {{ profile_form.zipcode }}<br>
+  {{ profile.university_grad_date_1 }}<br>
+  {{ profile.major_1 }}<br>
+  {{ profile.gpa_1 }}<br>
+  {{ profile.university_grad_date_2 }}<br>
+  {{ profile.major_2 }}<br>
+  {{ profile.gpa_2 }}<br>
+  {{ profile.university_grad_date_3 }}<br>
+  {{ profile.major_3 }}<br>
+  {{ profile.gpa_3 }}<br>
+  {{ profile.company_1 }}<br>
+  {{ profile.job_title_1 }}<br>
+  {{ profile.job_desc_1 }}<br>
+  {{ profile.company_2 }}<br>
+  {{ profile.job_title_2 }}<br>
+  {{ profile.job_desc_2 }}<br>
+  {{ profile.company_3 }}<br>
+  {{ profile.job_title_3 }}<br>
+  {{ profile.job_desc_3 }}<br>
+  {{ profile.about_me }}<br>
+  {{ profile.fun_fact }}<br>
+  {{ profile.skill }}<br>
+  {{ profile.birthday }}<br>
+  {{ profile.country }}<br>
+  {{ profile.city }}<br>
+  {{ profile.address }}<br>
+  {{ profile.zipcode }}<br>
+  {{ profile.user_val }}<br>
   {% if profile_form.picture %}
     <img src="{{profile_form.picture.url}}"><br>
   {% else %}
