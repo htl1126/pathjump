@@ -50,7 +50,7 @@
 
 #jumbo_image_1{
   /*background-image: url("http://essaysanddissertations.com/wp-content/uploads/2015/09/college.jpg");*/
-  background-image: url('../img/Central_campus.jpg');
+  background-image: url('../img/central_campus.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -253,9 +253,10 @@
 }
 #profile_row_1{
   padding-top: 1%;
-  width: 90%;
-  margin-left: 5%;
-  background-color: #65b4ce;
+/*  width: 90%;*/
+  /*margin-left: 5%;*/
+  /*background-color: #65b4ce;*/
+  border-bottom: 3px solid black;
   padding-bottom: 1%;
 }
 
