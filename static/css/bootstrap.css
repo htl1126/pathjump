@@ -29,7 +29,7 @@
 
 #jumbo_image_1{
   /*background-image: url("http://essaysanddissertations.com/wp-content/uploads/2015/09/college.jpg");*/
-  background-image: url('../img/library.jpg');
+  background-image: url('../img/Central_campus.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
@@ -48,7 +48,7 @@
   text-align: center;
 /*  padding-top: 5%;
   padding-bottom: 5%;*/
-  background-color: #002776;
+  background-color: #65b4ce;
   color: white;
   margin-top: -40px;
 }
@@ -518,6 +518,18 @@
 #getJob{
   margin-top: 100px;
 }
+
+
+/*This is the CSS for the Job Board Page*/
+
+
+
+.job_square{
+  height: 250px;
+  border: 1px solid black;
+}
+
+
 
 /*
 This is the end of my code and the start of bootstrap*/

@@ -38,6 +38,26 @@
             </ul>
           </div>
       </nav>
+      <div class='row' id="robs_row">
+        <div class='col-sm-2'>
+        </div>
+        {% for post in job_list %}
+        <div class='col-sm-2 job_square'>
+          <a href="/job/show_post/{{ post.id }}" target="_blank">{{ post.title }}</a>
+          <br>
+          <br>
+          Company: Company Name
+          <br>
+          <br>
+          Location: City Name
+          <br>
+          <br>
+          Description: This is the description of a job.
+        </div>
+        <div class='col-sm-1'>
+        </div>
+        {% endfor %}
+      </div>
 
       <ul>
         {% for post in job_list %}
