@@ -14,6 +14,12 @@ class UserForm(forms.ModelForm):
 class UserProfileForm(forms.ModelForm):
     birthday = forms.DateField(widget=forms.SelectDateWidget(
         years=range(1980, 2016)))
+    university_grad_date_1 = forms.DateField(widget=forms.SelectDateWidget(
+        years=range(1980, 2016)))
+    university_grad_date_2 = forms.DateField(widget=forms.SelectDateWidget(
+        years=range(1980, 2016)))
+    university_grad_date_3 = forms.DateField(widget=forms.SelectDateWidget(
+        years=range(1980, 2016)))
 
     class Meta:
         model = UserProfile

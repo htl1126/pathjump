@@ -17,15 +17,39 @@
                 <strong>Your account was updated successfully.</strong>
                 {% else %}
 
-                <form id="profile_form" method="post" action="/account/update/"
+                <form id="profile_form_form" method="post" action="/account/update/"
                         enctype="multipart/form-data">{% csrf_token %}
-                    Website: {{profile_form.website}}<br>
-                    University: {{profile_form.university}}<br>
-                    Date of Birth: {{profile_form.birthday}}<br>
-                    Country: {{profile_form.country}}<br>
-                    City: {{profile_form.city}}<br>
-                    Address: {{profile_form.address}}<br>
-                    Zip Code: {{profile_form.zipcode}}<br>
+                    Username: {{ user.username }}<br>
+                    Email: {{ user.email }}<br>
+                    First Name: {{ user.first_name }}<br>
+                    Last Name: {{ user.last_name }}<br>
+                    University Graduate Date 1: {{ profile_form.university_grad_date_1 }}<br>
+                    Major 1: {{ profile_form.major_1 }}<br>
+                    GPA 1: {{ profile_form.gpa_1 }}<br>
+                    University Graduate Date 2: {{ profile_form.university_grad_date_2 }}<br>
+                    Major 2: {{ profile_form.major_2 }}<br>
+                    GPA 2: {{ profile_form.gpa_2 }}<br>
+                    University Graduate Date 3: {{ profile_form.university_grad_date_3 }}<br>
+                    Major 3: {{ profile_form.major_3 }}<br>
+                    GPA 3: {{ profile_form.gpa_3 }}<br>
+                    Company 1: {{ profile_form.company_1 }}<br>
+                    Job Title 1: {{ profile_form.job_title_1 }}<br>
+                    Job Description 1: {{ profile_form.job_desc_1 }}<br>
+                    Company 2: {{ profile_form.company_2 }}<br>
+                    Job Title 2: {{ profile_form.job_title_2 }}<br>
+                    Job Description 2: {{ profile_form.job_desc_2 }}<br>
+                    Company 3: {{ profile_form.company_3 }}<br>
+                    Job Title 3: {{ profile_form.job_title_3 }}<br>
+                    Job Description 3: {{ profile_form.job_desc_3 }}<br>
+                    About Me: {{ profile_form.about_me }}<br>
+                    Fun fact: {{ profile_form.fun_fact }}<br>
+                    Skill: {{ profile_form.skill }}<br>
+                    Date of Birth: {{ profile_form.birthday }}<br>
+                    Country: {{ profile_form.country }}<br>
+                    City: {{ profile_form.city }}<br>
+                    Address: {{ profile_form.address }}<br>
+                    Zip code: {{ profile_form.zipcode }}<br>
+                    User values: {{ profile_form.user_val }}<br>
                     Profile Picture: {{profile_form.picture}}<br>
                     <input type="submit" name="submit" value="Update" />{% csrf_token %}
                 </form>
