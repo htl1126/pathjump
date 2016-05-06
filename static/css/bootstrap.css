@@ -498,8 +498,25 @@
   margin-top: 15px;
 }
 
+#profile_info_5{
+  font-size: 1em;
+/*  margin-left: .3%;*/
+  margin-top: 15px;
+
+}
+#profile_info_6{
+  font-size: 1em;
+/*  margin-left: .3%;*/
+  margin-top: 15px;
+  /*padding-bottom: 10%;*/
+
+}
+
 .bold_me{
   font-weight: bold;
+}
+.plus_button{
+  margin-left: 5%;
 }
 
 #todo_box_1{
