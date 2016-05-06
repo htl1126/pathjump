@@ -44,6 +44,13 @@
     </div><!-- /.container-fluid -->
   </nav>
 
+<!-- <div class='row logo_row'>
+  <div class="col-sm-4">
+  </div>
+    <div class="col-sm-5" id="pathjump_head_logo">
+    </div>
+  </div> -->
+
 <div class="row" id="profile_row_1">
     <div class="col-lg-1">
     </div>
@@ -60,7 +67,7 @@
       <div class="row title">
         Job Recommendations
       </div>
-      <div class="row rec" data-toggle="modal" data-target="#myModal">
+      <div class="row rec" data-toggle="modal" data-target="#myModal" id="job_1_box">
         <div class='col-sm-4' id='job_image_1'>
           <img src="{% static "img/barclays.png" %}" style="width:65px;height65px">
         </div>
@@ -71,26 +78,28 @@
           Salary: 75k-85k
         </div>
       </div>
-      <div class="row rec">
+      <div class="row rec" id="job_2_box">
         <div class='col-sm-4' id='job_image_2'>
-          <img src="{% static "img/chase20logo.png" %}" style="width:75px;height65px">
-        </div>
-        <div class='col-sm-4' id="job_company_2">
-          JP Morgan
+          <img src="{% static "img/chase_logo_1.jpg" %}" style="width:75px;height65px">
         </div>
         <div class='col-sm-4' id="job_position_2">
-          <a href="http://careers.jpmorgan.com/careers/programs/investor-services-fulltime-analyst">Analyst</a>
+          <!-- <a href="http://careers.jpmorgan.com/careers/programs/investor-services-fulltime-analyst">Analyst</a> -->
+          Analyst
+        </div>
+        <div class='col-sm-4' id="job_company_2">
+          Salary: 55k-65k
         </div>
       </div>
-      <div class="row rec">
-        <div class='col-sm-4' id="job_company_3">
-          Goldman Sachs
-        </div>
-        <div class='col-sm-4' id="job_position_3">
-          <a href="http://www.goldmansachs.com/careers/why-goldman-sachs/our-divisions/investment-banking/positions/analyst.html">Analyst</a>
-        </div>
+      <div class="row rec" id="job_3_box">
         <div class='col-sm-4' id='job_image_3'>
           <img src="{% static "img/Goldman_Sachs.svg-1.png" %}" style="width:75px;height65px">
+        </div>
+        <div class='col-sm-4' id="job_position_3">
+          <!-- <a href="http://www.goldmansachs.com/careers/why-goldman-sachs/our-divisions/investment-banking/positions/analyst.html">Analyst</a> -->
+          Financial Analyst
+        </div>
+        <div class='col-sm-4' id="job_company_3">
+          Salary: 58k-75k
         </div>
       </div>
     </div>
@@ -100,26 +109,38 @@
        <div class="row title">
         To Do List
       </div>
-      <div class="row rec">
+      <div class="row rec" id="todo_box_1">
         <div class='col-sm-4' id='todo_image_1'>
           <img src="{% static "img/Meetup.png" %}" style="width:75px;height55px">
         </div>
-        <div class='col-sm-4' id="todo_text_1">
+        <div class='col-sm-7' id="todo_text_1">
           <a href="http://www.meetup.com/New-York-Finance-And-Banking-Meetup/">Local Finance Meetup</a>
         </div>
-        <div class='col-sm-3' id="todo_check_1">
-          <label><input type="checkbox" value=""></label>
+      </div>
+      <div class="row rec" id='todo_box_2'>
+        <div class='col-sm-4' id='todo_image_2'>
+          <img src="{% static "img/mckinsey-logo.png" %}" style="width:95px;height75px">
+        </div>
+        <div class='col-sm-7' id='todo_text_2'>
+          <a href='http://www.mckinsey.com/careers/join-us/interview-prep/diconsa-practice-case-study/practice-case-questions'>McKinsey Finance Practice Case</a>
         </div>
       </div>
-      <div class="row rec">
+     <!--  <div class="row rec" id="todo_box_2">
         <div class='col-sm-8' id='todo_text_2'>
           Update 'Skills' on your Pathjump Profile!
         </div>
         <div class='col-sm-3' id="todo_check_2">
           <label><input type="checkbox" value=""></label>
         </div>
+      </div> -->
+      <div class="row rec" id="todo_box_3">
+        <div class='col-sm-4' id='todo_image_3'>
+          <img src="{% static "img/yahoo_finance_logo.png" %}" style="width:55px;height55px">
+        </div>
+        <div class='col-sm-6' id='todo_text_3'>
+          <a href="http://finance.yahoo.com/news/">Weekly Finance Industry Recap</a>
+        </div>
       </div>
-      <div class="row rec"></div>
     </div>
   </div>
 
@@ -185,6 +206,8 @@
       <div class="col-sm-4" id="school_logo">
       </div> -->
       <div class="col-lg-5">
+        <img id="school_logo"src="{% static "img/cornell_tech_t.png" %}" style="width:175px;height:200px">
+
       </div>
       <div class="col-lg-1 profile_margin">
       </div>
@@ -286,7 +309,7 @@
               </div>
               <div class='col-sm-1'>
               </div>
-              <div  class="col-sm-6" id='job_description'>
+              <div  class="col-sm-7" id='job_description'>
                 The Remediation Office is looking for a Program Management Office (PMO) Analyst with 1-3 years experience in coordinating program requirements with senior management and key stakeholders.
               </div>
             </div>
