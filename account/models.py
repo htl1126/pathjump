@@ -29,12 +29,17 @@ class UserProfile(models.Model):
 
     # The additional attributes we wish to include.
     picture = models.ImageField(upload_to=update_filename, blank=True)
+    university_1 = models.CharField(max_length=30, blank=True)
     university_grad_date_1 = models.CharField(max_length=20, blank=True)
     major_1 = models.CharField(max_length=20, blank=True)
     gpa_1 = models.CharField(max_length=10, blank=True)
+    university_2 = models.CharField(max_length=30, blank=True)
+    university_grad_date_1 = models.CharField(max_length=20, blank=True)
     university_grad_date_2 = models.CharField(max_length=20, blank=True)
     major_2 = models.CharField(max_length=20, blank=True)
     gpa_2 = models.CharField(max_length=10, blank=True)
+    university_3 = models.CharField(max_length=30, blank=True)
+    university_grad_date_1 = models.CharField(max_length=20, blank=True)
     university_grad_date_3 = models.CharField(max_length=20, blank=True)
     major_3 = models.CharField(max_length=20, blank=True)
     gpa_3 = models.CharField(max_length=10, blank=True)
