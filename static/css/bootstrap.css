@@ -58,6 +58,11 @@
   font-family: Quicksand;
 }
 
+.logo_row{
+  background-color: white;
+  margin-top: -20px;
+}
+
 #three_boxes{
   margin-top: 8%;
 }
@@ -269,15 +274,34 @@
 }
 
 #job_recs{
-  border: 1px solid black;
+  border: 3px solid #22c4ab;
   height: 300px;
-  background-color: white;
+  background-color: #22c4ab;
+  color: white;
+  font-weight: bold;
 }
 
 #to_do_list{
-  border: 1px solid black;
+  border: 3px solid #ed6451;
   height: 300px;
+  background-color: #ed6451;
+  color: white;
+
+}
+
+#job_1_box{
+  background-color: #eff3f4;
+  color: black;
+}
+
+#job_2_box{
   background-color: white;
+  color: black;
+}
+
+#job_3_box{
+  background-color: #eff3f4;
+  color: black;
 }
 
 #profile_text_1{
@@ -293,11 +317,11 @@
   background-size: cover;
 }
 .profile_button{
-  border: 1px solid black;
+/*  border: 1px solid black;*/
   height: 50px;
   text-align: center;
   font-size: 2em;
-  background-color: #3b3d3e;
+  background-color: #445c71;
   color: white;
 }
 
@@ -308,8 +332,8 @@
 .rec {
   border: 1px solid black;
   height: 28%;
-    background-image: url('http://www.michaelnyffelerphotography.com/wp-content/uploads/2013/06/White-christmas-light-background.png');
-  background-size: cover;
+/*    background-image: url('http://www.michaelnyffelerphotography.com/wp-content/uploads/2013/06/White-christmas-light-background.png');
+  background-size: cover;*/
 }
 
 .profile_margin{
@@ -321,14 +345,16 @@
 #job_company_1{
   text-align: center;
   font-size: 1.3em;
-  margin-top: 7%;
+  margin-top: 3%;
+  border-left: 1px solid black;
 
 }
 
 #job_position_1{
   text-align: center;
   font-size: 1.3em;
-  margin-top: 7%;
+  margin-top: 3%;
+  border-left: 1px solid black;
 }
 
 #job_image_1{
@@ -342,15 +368,18 @@
 
 #job_company_2{
   text-align: center;
-  font-size: 1em;
-  margin-top: 7%;
+  font-size: 1.3em;
+  margin-top: 3%;
+  border-left: 1px solid black;
 
 }
 
 #job_position_2{
   text-align: center;
   font-size: 1.3em;
-  margin-top: 7%;
+  margin-top: 6%;
+  border-left: 1px solid black;
+  height: 55%;
 }
 
 #job_image_2{
@@ -362,17 +391,23 @@
 /*  margin-right: 5%;*/
 }
 
+#job_image_3{
+  margin-top: 3px;
+}
+
 #job_company_3{
   text-align: center;
-  font-size: 1em;
-  margin-top: 7%;
+  font-size: 1.3em;
+  margin-top: 4%;
+  border-left: 1px solid black;
 
 }
 
 #job_position_3{
   text-align: center;
   font-size: 1.3em;
-  margin-top: 7%;
+  margin-top: 3%;
+  border-left: 1px solid black;
 }
 
 #todo_image_3{
@@ -453,6 +488,21 @@
   font-weight: bold;
 }
 
+#todo_box_1{
+  background-color: #eff3f4;
+  color: black;
+}
+
+#todo_box_2{
+  background-color: white;
+  color: black;
+}
+
+#todo_box_3{
+  background-color: #eff3f4;
+  color: black;
+}
+
 #user_info{
   height: 300px;
   background-color: blue;
@@ -460,21 +510,27 @@
 }
 
 #education_text{
-  background-color: #65b4ce;
+/*  background-color: #3e4245;*/
+  background-color: #445c71;
   margin-bottom: 10%;
+  color: white;
+ /* border-bottom: 2px solid white;*/
+/*  opacity: .7;*/
 
 }
 
 #user_info_text{
   display: none;
-  background-color: #65b4ce;
+  background-color: #445c71;
   margin-bottom: 10%;
+  color: white;
 }
 
 #work_experience_text{
   display:none;
-  background-color: #65b4ce;
+  background-color: #445c71;
   margin-bottom: 10%;
+  color: white;
 }
 
 #degree_info{
@@ -545,6 +601,21 @@
   margin-top: 100px;
 }
 
+#school_logo{
+  background-image: url('../img/cornell.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  background-position: center;
+
+}
+
+/*.title{
+  color: white;
+  background-color: #3e4245;
+}*/
+
 
 /*This is CSS for the job modal*/
 
@@ -556,7 +627,7 @@
 
 #job_description{
   padding-top: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 #company_logo{
