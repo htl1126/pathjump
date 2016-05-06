@@ -27,6 +27,7 @@
             <li><a href="/account/profile/">Profile</a></li>
             {% if user.is_authenticated %}
               <li><a href='/job/board'>Jobs</a></li>
+              <li><a href='/account/update'>Edit</a></li>
             {% endif %}
               <li class="divider-vertical"></li>
             </ul>
@@ -52,9 +53,9 @@
   </div> -->
 
 <div class="row" id="profile_row_1">
-    <div class="col-lg-1">
+    <div class="col-sm-1">
     </div>
-    <div class="col-lg-3">
+    <div class="col-sm-3">
       {% if profile_form.picture %}
     <img id="profile_pic" src="{{profile_form.picture.url}}"><br>
       {% else %}
@@ -63,7 +64,7 @@
     </div>
 <!--     <div class="col-lg-1">
     </div> -->
-    <div class="col-lg-3" id="job_recs">
+    <div class="col-sm-3" id="job_recs">
       <div class="row title">
         Job Recommendations
       </div>
@@ -103,9 +104,9 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-1">
+    <div class="col-sm-1">
     </div>
-    <div class="col-lg-3" id="to_do_list">
+    <div class="col-sm-3" id="to_do_list">
        <div class="row title">
         To Do List
       </div>
@@ -174,7 +175,7 @@
         <h1>Education</h1>
         <div class="row" id="profile_info_1">
           <div>
-            <span id="university_name">{{ profile_form.university }}
+            <span id="university_name">{{ profile_form.university_1 }}
             </span>
             <hr>
             <span id="degree_info">Masters Degree class of 2017
@@ -198,6 +199,18 @@
             </span>
           </div>
         </div>
+        <div class="row" id='profile_info_5'>
+          <div class="col-sm-10" id="add_class">
+            <span class="bold_me">Relevent Course Work:</span>
+            <img class="plus_button" src="{% static "img/sign-add-icon.png" %}" style="width:25px;height:25px">
+          </div>
+        </div>
+<!--         <div class="row" id='profile_info_6'>
+          <div class="col-sm-10" id="add_class">
+            <span class="bold_me">Extracurricular Activities:</span>
+            <img class="plus_button" src="{% static "img/sign-add-icon.png" %}" style="width:25px;height:25px">
+          </div>
+        </div> -->
         </div>
         <!-- <img src="img/images.png"> -->
       </div>
@@ -206,7 +219,7 @@
       <div class="col-sm-4" id="school_logo">
       </div> -->
       <div class="col-lg-5">
-        <img id="school_logo"src="{% static "img/cornell_tech_t.png" %}" style="width:175px;height:200px">
+        <img id="school_logo"src="{% static "img/cornell_tech_t.png" %}" style="width:150px;height:200px">
 
       </div>
       <div class="col-lg-1 profile_margin">
