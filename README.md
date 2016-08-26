@@ -12,6 +12,7 @@ The structure of this website is in the following,
 
  - backend - the backend infrastructure
  - home - the homepage
- - account - user account related pages
- - frontend_file - ready to be deployed frontend files such as html, CSS and Javascript
+ - account - user account related pages with authorization and authentication
  - static - shared CSS and JavaScript files
+ - media - image files uploaded by users
+ - job - job board
